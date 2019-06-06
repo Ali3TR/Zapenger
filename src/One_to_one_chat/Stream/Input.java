@@ -1,4 +1,4 @@
-package Stream;
+package One_to_one_chat.Stream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class Input extends Thread
 {
-    Socket socket;
+    private Socket socket;
     public Input(Socket socket)
     {
         this.socket=socket;

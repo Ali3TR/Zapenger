@@ -1,5 +1,7 @@
-import Stream.Input;
-import Stream.Output;
+package One_to_one_chat;
+
+import One_to_one_chat.Stream.Input;
+import One_to_one_chat.Stream.Output;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.ServerSocket;
@@ -11,16 +13,16 @@ public class Server
         try
         {
             ServerSocket serverSocket = new ServerSocket(37425);
-            Socket socket = serverSocket.accept( );
+            Socket socket = serverSocket.accept();
             Output output = new Output(socket);
             Input input = new Input(socket);
             input.start();
             output.start();
-            System.out.println("Client Connected");
+            System.out.println("One_to_one_chat.Client Connected");
         }
         catch (IOException error)
         {
-            System.err.println(error +": error setting up socket");
+            System.err.println(error +" (Error setting up socket!)");
         }
     }
 }                        
