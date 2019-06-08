@@ -1,4 +1,4 @@
-package One_to_one_chat.Stream;
+package Stream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

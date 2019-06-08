@@ -1,4 +1,4 @@
-package One_to_one_chat.Stream;
+package Stream;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -9,9 +9,11 @@ import java.util.Scanner;
 public class Output extends Thread
 {
     private Socket socket;
-    public Output(Socket socket)
+    private String userName;
+    public Output(Socket socket,String userName)
     {
         this.socket=socket;
+        this.userName=userName;
     }
     @Override
     public void run()
@@ -23,6 +25,9 @@ public class Output extends Thread
             OutputStream outputStream = socket.getOutputStream();
             sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
             String sendMessage;
+            sentRead.write(userName);
+            sentRead.newLine();
+            sentRead.flush();
             while(true)
             {
                 sendMessage = keyRead.nextLine();  // keyboard reading
