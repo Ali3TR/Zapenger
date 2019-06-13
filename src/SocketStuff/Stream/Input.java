@@ -1,4 +1,4 @@
-package Stream;
+package SocketStuff.Stream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,6 +8,7 @@ import java.net.Socket;
 public class Input extends Thread
 {
     private Socket socket;
+    boolean successfulLogIn=true;
     public Input(Socket socket)
     {
         this.socket=socket;
@@ -25,6 +26,8 @@ public class Input extends Thread
             {
                 if((receiveMessage = receiveRead.readLine()) != null) //receive from server
                 {
+                    if (receiveMessage.equalsIgnoreCase("##NotLogedIn"))
+                        successfulLogIn=false;
                     System.out.println(receiveMessage);
                 }
             }
@@ -33,5 +36,9 @@ public class Input extends Thread
         {
             System.err.println(error + ":Error setting up input stream!");
         }
+    }
+    public boolean isLogedIn()
+    {
+        return successfulLogIn;
     }
 }

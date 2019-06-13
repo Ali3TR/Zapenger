@@ -1,3 +1,5 @@
+package SocketStuff;
+
 import java.util.Scanner;
 
 public class ServerInput extends Thread

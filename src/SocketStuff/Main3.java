@@ -1,12 +1,12 @@
-import java.util.Scanner;
+package SocketStuff;
 
-public class Main2
+public class Main3
 {
     public static void main(String[] args)
     {
-        String userName="Ali";
+        String userName="Mandal";
         //Scanner sc = new Scanner(System.in);
         //userName = sc.nextLine();
-        Client client = new Client(userName);
+        Client client = new Client(userName,"555");
     }
 }

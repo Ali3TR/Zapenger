@@ -1,3 +1,5 @@
+package SocketStuff;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -32,7 +34,7 @@ public class MegaServer
         }
         catch (IOException error)
         {
-            System.err.println(error + "(Error Accepting Client "+(clientList.size()+1)+")");
+            System.err.println(error + "(Error Accepting SocketStuff.Client "+(clientList.size()+1)+")");
         }
     }
     public static ArrayList<ClientHandler> getClientList()

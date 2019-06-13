@@ -1,4 +1,4 @@
-package Stream;
+package SocketStuff.Stream;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -10,6 +10,7 @@ public class Output extends Thread
 {
     private Socket socket;
     private String userName;
+    private boolean isLogedIn=false;
     public Output(Socket socket,String userName)
     {
         this.socket=socket;
