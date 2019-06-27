@@ -1,30 +1,38 @@
 package SocketStuff;
 
+import DataBase.UserList;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
+import DataBase.Chats;
 
 public class ClientHandler extends Thread
 {
+    UserList userList = new UserList();
     private Socket socket;
     private String userName;
     private ArrayList<ClientHandler> chatList = new ArrayList<>();
     private ArrayList<ArrayList<String>> groupList = new ArrayList<>();
-    int chatNumber=-1;
-    int groupNumber=-1;
+    private int chatNumber=-1;
+    private int groupNumber=-1;
+    InputStream inputStream;
+    BufferedReader receiveRead;
+    OutputStream outputStream;
+    BufferedWriter sentRead;
     public ClientHandler(Socket socket)
     {
         this.socket=socket;
+        this.userName=socket.toString();
     }
     @Override
     public void run()
     {
         while (true)
         {
-            BufferedReader receiveRead;
             try
             {
-                InputStream inputStream = socket.getInputStream();
+                inputStream = socket.getInputStream();
                 receiveRead = new BufferedReader(new InputStreamReader(inputStream));
                 String receiveMessage;
                 while(true)
@@ -37,10 +45,8 @@ public class ClientHandler extends Thread
                         }
                         else
                         {
-                            if (chatNumber!=-1)
-                                sendToAll(receiveMessage,chatNumber,1);
-                            if (groupNumber!=-1)
-                                sendToAll(receiveMessage,groupNumber,2);
+                            String[] temp = receiveMessage.split("##");
+                            Chats.addToChat(userName+" : "+temp[1],userName,temp[0]);
                         }
                     }
                 }
@@ -51,29 +57,28 @@ public class ClientHandler extends Thread
             }
         }
     }
-    private void sendToAll(String receiveMessage,int converNumber,int type)
+    private void send(String receiveMessage,int converNumber,int type)
     {
         if (type==1)
         {
             ArrayList<ClientHandler> clientList = new ArrayList<>();
             clientList.add(chatList.get(converNumber));
-            sendToAll(receiveMessage,clientList);
+            send(receiveMessage,clientList);
         }
         else
         {
 
         }
     }
-    private void sendToAll(String receiveMessage,ArrayList<ClientHandler> clientList)
+    private void send(String receiveMessage,ArrayList<ClientHandler> clientList)
     {
         for (int k=0;k<clientList.size();k++)
         {
-            BufferedWriter sentRead;
             try
             {
-                OutputStream outputStream = clientList.get(k).getSocket().getOutputStream();
+                outputStream = clientList.get(k).getSocket().getOutputStream();
                 sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
-                sentRead.write(userName + " : "+receiveMessage);
+                sentRead.write("&"+userName+":"+receiveMessage);
                 sentRead.newLine();
                 sentRead.flush();
             }
@@ -91,7 +96,7 @@ public class ClientHandler extends Thread
     {
         return userName;
     }
-    private int correctClient(ArrayList<ClientHandler> clientList)
+    /*private int correctClient(ArrayList<ClientHandler> clientList)
     {
         for (int k=0;k<clientList.size();k++)
         {
@@ -99,7 +104,7 @@ public class ClientHandler extends Thread
                 return k;
         }
         return -1;
-    }
+    }*/
     private int hasChat(String userName)
     {
         for (int k=0;k<chatList.size();k++)
@@ -109,23 +114,36 @@ public class ClientHandler extends Thread
         }
         return -1;
     }
-    public ArrayList<ClientHandler> getChatList()
+    private ArrayList<ClientHandler> getChatList()
     {
         return chatList;
-    }
-    private boolean isUser(String userNameAndPass)
-    {
-        String[] temp = new String[2];
-        temp = userNameAndPass.split("#");
-
-
-        return true;
     }
     private void command(String command)
     {
         String[] temp = command.split("-");
         switch (temp[0])
         {
+            case "##Username":
+                this.userName=temp[1];
+                break;
+            case "##Info":
+                int isAuthorized = userList.isAuthorized(temp[1],temp[2]);
+                ArrayList<ClientHandler> clientList = new ArrayList<>();
+                clientList.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
+                switch (isAuthorized)
+                {
+                    case 1:
+                        send("##LogedIn",clientList);
+                        userName=temp[1];
+                        break;
+                    case -1:
+                        send("##NotLogedIn",clientList);
+                        break;
+                    case 0:
+                        send("##NotFound",clientList);
+                        break;
+                }
+                break;
             case "##Chat":
                 if (hasChat(temp[1])!=-1)
                 {
@@ -157,10 +175,26 @@ public class ClientHandler extends Thread
                     groupList.add(tempArray);
                     groupNumber=groupList.size()-1;
                 }
+            case "##Close":
+                close();
 
                 break;
             default:
                 System.out.println("You can not send a text starting with ##.");
+        }
+    }
+    public void close()
+    {
+        try
+        {
+            receiveRead.close();
+            sentRead.close();
+            inputStream.close();
+            outputStream.close();
+        }
+        catch (IOException error)
+        {
+            System.err.println(error);
         }
     }
 }
