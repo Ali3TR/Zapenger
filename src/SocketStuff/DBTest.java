@@ -1,14 +1,13 @@
 package SocketStuff;
 
-import DataBase.Account;
-import DataBase.User;
-import DataBase.UserList;
+import DataBase.AccountDB;
 
 public class DBTest
 {
-    public static void main(String[] args) {
-        UserList userList = new UserList();
-        Account account = new Account("Ali","Sedaghi","Ali@gmail.com","Ali","123456");
-        userList.addUser(account);
+    public static void main(String[] args) throws Exception{
+        AccountDB accountDB = new AccountDB();
+        //Account a1 = new Account("mahdi", "jafari", "mjafari@ymail.com", "mj", "asfgdhdb13478");
+        //accountDB.addAccount(a1);
+        accountDB.getAccounts();
     }
 }

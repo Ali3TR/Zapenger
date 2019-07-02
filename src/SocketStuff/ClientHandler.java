@@ -1,5 +1,6 @@
 package SocketStuff;
 
+import DataBase.AccountDB;
 import DataBase.UserList;
 
 import java.io.*;
@@ -9,7 +10,7 @@ import DataBase.Chats;
 
 public class ClientHandler extends Thread
 {
-    UserList userList = new UserList();
+    AccountDB accountDB = new AccountDB();
     private Socket socket;
     private String userName;
     private ArrayList<ClientHandler> chatList = new ArrayList<>();
@@ -127,7 +128,7 @@ public class ClientHandler extends Thread
                 this.userName=temp[1];
                 break;
             case "##Info":
-                int isAuthorized = userList.isAuthorized(temp[1],temp[2]);
+                int isAuthorized = accountDB.isAuthorized(temp[1],temp[2]);
                 ArrayList<ClientHandler> clientList = new ArrayList<>();
                 clientList.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 switch (isAuthorized)
