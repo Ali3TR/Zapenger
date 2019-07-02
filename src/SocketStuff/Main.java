@@ -1,7 +1,5 @@
 package SocketStuff;
 
-import DataBase.ChatList;
-
 import java.util.Scanner;
 
 public class

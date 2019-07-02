@@ -4,14 +4,13 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Chats
 {
-    public static ArrayList<String> loadChats(String sender,String receiver)
+    public static ArrayList<String> loadChat(String sender,String receiver)
     {
         String sr1;
         String sr2;
@@ -58,8 +57,7 @@ public class Chats
         try
         {
             BufferedWriter output = new BufferedWriter(new FileWriter("/home/sajad/Desktop/Sajad/GIT/Zapenger/src/DataBase/Chats/"+sr1+"##"+sr2+".txt",true));
-            //BufferedWriter output = Files.newBufferedWriter(Paths.get("/home/sajad/Desktop/Sajad/GIT/Zapenger/src/DataBase/"+sr1+"##"+sr2+".txt"));
-            output.append(message);
+            output.write(message);
             output.newLine();
             output.close();
         }

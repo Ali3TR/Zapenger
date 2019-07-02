@@ -1,7 +1,5 @@
 package SocketStuff;
 
-import DataBase.ChatList;
-
 public class Main2
 {
     public static void main(String[] args)
@@ -9,6 +7,6 @@ public class Main2
         //String userName="Ali";
         //Scanner sc = new Scanner(System.in);
         //userName = sc.nextLine();
-        Client client = new Client("Ali");
+        Client client = new Client("Hamed");
     }
 }
