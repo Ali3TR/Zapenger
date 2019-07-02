@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7d71499-b334-4220-8a7c-e5e3f9f0bb68" name="Default Changelist" comment="added Storing chats in text file!">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/59b6ef4f-b209-444c-a9a5-68bfe5905c3b.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/59b6ef4f-b209-444c-a9a5-68bfe5905c3b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ffa75712-2c3f-40f3-abdf-53983a5c24ed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ffa75712-2c3f-40f3-abdf-53983a5c24ed/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/AccountDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBase/AccountDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59b6ef4f-b209-444c-a9a5-68bfe5905c3b/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ/schema/new_schema.IHWLKw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/zapenger.gnFtUQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/zapenger.gnFtUQ/schema/proj.XaM0AA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ffa75712-2c3f-40f3-abdf-53983a5c24ed/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ffa75712-2c3f-40f3-abdf-53983a5c24ed/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+    <list default="true" id="f7d71499-b334-4220-8a7c-e5e3f9f0bb68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zapenger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Zapenger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/UserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/UserList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/UserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="58">
-              <caret line="130" column="50" lean-forward="true" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
+              <caret line="130" column="50" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#hasChat#0;class#ClientHandler#0" />
@@ -97,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -146,7 +117,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/LogIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="-62">
               <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -159,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="521">
-              <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -412,7 +383,7 @@
       <workItem from="1561999925854" duration="1630000" />
       <workItem from="1562048114731" duration="798000" />
       <workItem from="1562054695009" duration="10284000" />
-      <workItem from="1562065691812" duration="1507000" />
+      <workItem from="1562065691812" duration="1827000" />
     </task>
     <task id="LOCAL-00001" summary="added Storing chats in text file!">
       <created>1561634027372</created>
@@ -421,11 +392,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561634027372</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Connected to database!">
+      <created>1562067250616</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562067250617</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128186000" />
+    <option name="totallyTimeSpent" value="128506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -440,7 +418,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924242" visible="true" weight="0.2776204" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924242" weight="0.2776204" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3990228" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -499,7 +477,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Storing chats in text file!" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Storing chats in text file!" />
+    <MESSAGE value="Connected to database!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected to database!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/GossipClient.java" />
@@ -663,7 +642,7 @@
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
-          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -673,7 +652,7 @@
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
-          <caret line="130" column="50" lean-forward="true" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
+          <caret line="130" column="50" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#hasChat#0;class#ClientHandler#0" />
@@ -710,13 +689,13 @@
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/LogIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="-62">
           <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
