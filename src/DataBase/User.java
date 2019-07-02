@@ -12,12 +12,11 @@ public class User
 
     }
 
-    public User(String username, String pass, String email, int ID)
+    public User(String username, String pass, String email)
     {
         this.username = username;
         this.pass = pass;
         this.email=email;
-        this.ID = ID;
     }
 
     public String getUsername()

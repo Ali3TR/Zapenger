@@ -1,20 +1,22 @@
 package SocketStuff;
 
+import GUI.StartGUI;
 import SocketStuff.Stream.Input;
 import SocketStuff.Stream.Output;
-
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
+import javax.swing.JFrame;
+import GUI.WelcomePage;
 
 public class Client
 {
-    String userName;
-    private int isAuthorized=-1;
+    private static String userName;
+    private static String pass;
     public Client(String userName)
     {
-        this.userName=userName;
-        try
+        StartGUI startGUI = new StartGUI();
+        /*try
         {
             Socket socket = new Socket("127.0.0.1", 37425);
             //isAuthorized(socket);
@@ -26,43 +28,49 @@ public class Client
         catch (IOException error)
         {
             System.out.println("No server Found!");
-        }
+        }*/
     }
-    public void isAuthorized(Socket socket)
+    public static Socket connect()
     {
         try
         {
-            Scanner sc = new Scanner(System.in);
+            Socket socket = new Socket("127.0.0.1", 37425);
+            return socket;
+        }
+        catch (IOException error)
+        {
+            System.out.println("No server Found!");
+        }
+        return new Socket();
+    }
+    public static int isAuthorized(Socket socket)
+    {
+        try
+        {
             BufferedWriter sentRead;
             OutputStream outputStream = socket.getOutputStream();
             sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
             BufferedReader receiveRead;
             InputStream inputStream = socket.getInputStream();
             receiveRead = new BufferedReader(new InputStreamReader(inputStream));
-            while (isAuthorized!=1)
+            sentRead.write("##"+userName+"-"+pass);
+            String receiveMessage;
+            while ((receiveMessage = receiveRead.readLine()) != null)
             {
-                String userName = sc.nextLine();
-                String pass = sc.nextLine();
-                sentRead.write("##"+userName+"-"+pass);
-                String receiveMessage = receiveRead.readLine();
                 if (receiveMessage.equalsIgnoreCase("##NotLogedIn"))
                 {
-                    System.out.println("Wrong password(password is case sensitive)!");
-                    isAuthorized=-1;
+                    return -1;
                 }
                 else if (receiveMessage.equalsIgnoreCase("##LogedIn"))
                 {
-                    isAuthorized=1;
-                    System.out.println("You are logged in!");
-                    sentRead.write("##Close");
+                    return 1;
                 }
                 else if (receiveMessage.equalsIgnoreCase("##NotFound"))
                 {
-                    isAuthorized=0;
-                    System.out.println("User Not found!try creating one!");
+                    return 0;
                 }
+
             }
-            sc.close();
             sentRead.close();
             outputStream.close();
             receiveRead.close();
@@ -72,5 +80,11 @@ public class Client
         {
             System.out.println(error);
         }
+        return -2;
+    }
+    public static void setInfo(String userName,String pass)
+    {
+        Client.userName=userName;
+        Client.pass=pass;
     }
 }
