@@ -8,7 +8,7 @@ import java.net.Socket;
 public class Input extends Thread
 {
     private Socket socket;
-    boolean successfulLogIn=true;
+    int isAuthorized=-1;
     public Input(Socket socket)
     {
         this.socket=socket;
@@ -26,9 +26,12 @@ public class Input extends Thread
             {
                 if((receiveMessage = receiveRead.readLine()) != null) //receive from server
                 {
-                    if (receiveMessage.equalsIgnoreCase("##NotLogedIn"))
-                        successfulLogIn=false;
-                    System.out.println(receiveMessage);
+                    if (receiveMessage.startsWith("##"))
+                    {
+
+                    }
+                    else
+                        System.out.println(receiveMessage);
                 }
             }
         }
@@ -37,8 +40,8 @@ public class Input extends Thread
             System.err.println(error + ":Error setting up input stream!");
         }
     }
-    public boolean isLogedIn()
+    public int getIsAuthorized()
     {
-        return successfulLogIn;
+        return isAuthorized;
     }
 }

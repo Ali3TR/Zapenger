@@ -1,14 +1,19 @@
 package SocketStuff;
 
-//import sample.Welcome;
+import DataBase.ChatList;
 
-public class Main
+import java.util.Scanner;
+
+public class
+Main
 {
     public static void main(String[] args)
     {
-        //Scanner sc = new Scanner(System.in);
-        //userName = sc.nextLine();
-        SocketStuff.Client client = new SocketStuff.Client("Sajad","656565");
+        Scanner sc = new Scanner(System.in);
+        //String userName = sc.nextLine();
+        //sc.close();
+        //SocketStuff.Client client = new SocketStuff.Client();
         //Welcome frame = new Welcome();
+        Client client = new Client("Sajad");
     }
 }

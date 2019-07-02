@@ -7,6 +7,6 @@ public class Main3
         String userName="Mandal";
         //Scanner sc = new Scanner(System.in);
         //userName = sc.nextLine();
-        Client client = new Client(userName,"555");
+        //Client client = new Client(userName,"555");
     }
 }

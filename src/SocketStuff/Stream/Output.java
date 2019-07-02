@@ -8,9 +8,8 @@ import java.util.Scanner;
 
 public class Output extends Thread
 {
-    private Socket socket;
     private String userName;
-    private boolean isLogedIn=false;
+    private Socket socket;
     public Output(Socket socket,String userName)
     {
         this.socket=socket;
@@ -19,16 +18,16 @@ public class Output extends Thread
     @Override
     public void run()
     {
-        Scanner keyRead = new Scanner(System.in);
         BufferedWriter sentRead;
         try
         {
             OutputStream outputStream = socket.getOutputStream();
             sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
-            String sendMessage;
-            sentRead.write(userName);
+            sentRead.write("##Username-"+userName);
             sentRead.newLine();
             sentRead.flush();
+            String sendMessage;
+            Scanner keyRead = new Scanner(System.in);
             while(true)
             {
                 sendMessage = keyRead.nextLine();  // keyboard reading
