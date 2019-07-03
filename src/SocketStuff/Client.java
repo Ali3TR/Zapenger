@@ -53,10 +53,16 @@ public class Client
             BufferedReader receiveRead;
             InputStream inputStream = socket.getInputStream();
             receiveRead = new BufferedReader(new InputStreamReader(inputStream));
-            sentRead.write("##"+userName+"-"+pass);
+            System.out.println("Streams are set!");
+            sentRead.write("##Info-"+userName+"-"+pass);
+            sentRead.newLine();
+            sentRead.flush();
+            System.out.println("Message sent wating for server to respond!");
             String receiveMessage;
             while ((receiveMessage = receiveRead.readLine()) != null)
             {
+                System.out.println("server answered!");
+                System.out.println(receiveMessage);
                 if (receiveMessage.equalsIgnoreCase("##NotLogedIn"))
                 {
                     return -1;
@@ -71,10 +77,12 @@ public class Client
                 }
 
             }
+            System.out.println("closing stuff");
             sentRead.close();
             outputStream.close();
             receiveRead.close();
             inputStream.close();
+            System.out.println("Stuff closed");
         }
         catch (IOException error)
         {

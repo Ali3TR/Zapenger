@@ -1,5 +1,7 @@
 package SocketStuff;
 
+import DataBase.AccountDB;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -7,6 +9,7 @@ import java.util.ArrayList;
 
 public class MegaServer
 {
+    private static AccountDB accountDB = new AccountDB();
     private static ArrayList<ClientHandler> clientList = new ArrayList<>();
     private static boolean finished = false;
     public static void main(String[] args)
@@ -27,9 +30,9 @@ public class MegaServer
             while (!finished)
             {
                 Socket socket = serverSocket.accept();
-                ClientHandler clientHandler = new ClientHandler(socket);
-                clientHandler.start();
+                ClientHandler clientHandler = new ClientHandler(socket,accountDB);
                 clientList.add(clientHandler);
+                clientHandler.start();
             }
         }
         catch (IOException error)

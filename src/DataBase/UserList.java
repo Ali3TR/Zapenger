@@ -5,7 +5,7 @@ import java.sql.*;
 
 public class UserList
 {
-    private Connection connection;
+    /*private Connection connection;
     private PreparedStatement preparedStatement;
 
     public UserList()
@@ -82,6 +82,6 @@ public class UserList
             return 0;
         }
         return -1;
-    }
+    }*/
 
 }

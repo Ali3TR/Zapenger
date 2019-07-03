@@ -1,5 +1,6 @@
 package SocketStuff;
 
+import DataBase.AccountDB;
 import DataBase.UserList;
 
 import java.io.*;
@@ -9,7 +10,6 @@ import DataBase.Chats;
 
 public class ClientHandler extends Thread
 {
-    UserList userList = new UserList();
     private Socket socket;
     private String userName;
     private ArrayList<ClientHandler> chatList = new ArrayList<>();
@@ -20,10 +20,11 @@ public class ClientHandler extends Thread
     BufferedReader receiveRead;
     OutputStream outputStream;
     BufferedWriter sentRead;
-    public ClientHandler(Socket socket)
+    private AccountDB accountDB;
+    public ClientHandler(Socket socket,AccountDB accountDB)
     {
         this.socket=socket;
-        this.userName=socket.toString();
+        this.accountDB=accountDB;
     }
     @Override
     public void run()
@@ -39,6 +40,7 @@ public class ClientHandler extends Thread
                 {
                     if((receiveMessage = receiveRead.readLine()) != null)
                     {
+                        System.out.println("received message is : " +receiveMessage);
                         if (receiveMessage.startsWith("##"))
                         {
                             command(receiveMessage);
@@ -78,7 +80,7 @@ public class ClientHandler extends Thread
             {
                 outputStream = clientList.get(k).getSocket().getOutputStream();
                 sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
-                sentRead.write("&"+userName+":"+receiveMessage);
+                sentRead.write(/*"&"+userName+":"+*/receiveMessage);
                 sentRead.newLine();
                 sentRead.flush();
             }
@@ -127,7 +129,8 @@ public class ClientHandler extends Thread
                 this.userName=temp[1];
                 break;
             case "##Info":
-                int isAuthorized = userList.isAuthorized(temp[1],temp[2]);
+                int isAuthorized = AccountDB.isAuthorized(temp[1],temp[2]);
+                this.userName=temp[1];
                 ArrayList<ClientHandler> clientList = new ArrayList<>();
                 clientList.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 switch (isAuthorized)

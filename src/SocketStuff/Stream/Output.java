@@ -23,9 +23,6 @@ public class Output extends Thread
         {
             OutputStream outputStream = socket.getOutputStream();
             sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
-            sentRead.write("##Username-"+userName);
-            sentRead.newLine();
-            sentRead.flush();
             String sendMessage;
             Scanner keyRead = new Scanner(System.in);
             while(true)

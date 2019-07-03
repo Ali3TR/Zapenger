@@ -4,6 +4,7 @@ import SocketStuff.Client;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.net.Socket;
 import javax.swing.*;
 import javax.swing.event.*;
 
@@ -12,7 +13,7 @@ public class LogIn extends JPanel {
     private JLabel userName;
     private JTextField userNameText;
     private JLabel pass;
-    private JTextField passText;
+    private JPasswordField passText;
     private JLabel noAccount;
     private JButton signUp;
     private String userNameEntered;
@@ -25,17 +26,17 @@ public class LogIn extends JPanel {
         //construct components
         logIn = new JButton ("Log In");
         userName = new JLabel ("UserName:");
-        userNameText = new JTextField (5);
+        userNameText = new JTextField (50);
         pass = new JLabel ("Password:");
-        passText = new JTextField (5);
+        passText = new JPasswordField (50);
         noAccount = new JLabel ("Don't have an account? Sign up.");
         signUp = new JButton ("Sign Up");
         incorrect = new JLabel ("Wrong Password!");
         notFound = new JLabel ("Username not found!");
 
 
-        incorrect.setEnabled (false);
-        notFound.setEnabled (false);
+        incorrect.setVisible(false);
+        notFound.setVisible(false);
 
         //adjust size and set layout
         setPreferredSize (new Dimension (258, 249));
@@ -61,31 +62,50 @@ public class LogIn extends JPanel {
         noAccount.setBounds (15, 200, 225, 15);
         signUp.setBounds (85, 220, 90, 20);
         incorrect.setBounds (70, 165, 125, 30);
-        notFound.setBounds (80, 170, 100, 25);
+        notFound.setBounds (57, 165, 151, 30);
 
-        userNameEntered = userNameText.getText();
-        passEntered = passText.getText();
+
+
+
         logIn.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
             {
+                userNameEntered = userNameText.getText();
+                passEntered = String.valueOf(passText.getPassword());
                 Client.setInfo(userNameEntered,passEntered);
-                int authorize = Client.isAuthorized(Client.connect());
+                System.out.println("Info set");
+                Socket socket = Client.connect();
+                System.out.println("Socket set");
+                int authorize = Client.isAuthorized(socket);
+                System.out.println("Authorize is" + authorize);
                 switch (authorize)
                 {
                     case -1:
-                        notFound.setEnabled(false);
-                        incorrect.setEnabled(true);
+                        notFound.setVisible(false);
+                        incorrect.setVisible(true);
                         break;
                     case 0:
-                        incorrect.setEnabled(false);
-                        notFound.setEnabled(true);
+                        incorrect.setVisible(false);
+                        notFound.setVisible(true);
                         break;
                     case 1:
                         setVisible(false);
                         WelcomePage.Hide();
                 }
+
+            }
+        });
+        signUp.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                userNameEntered = userNameText.getText();
+                passEntered = String.valueOf(passText.getPassword());
+                System.out.println(userNameEntered);
+                System.out.println(passEntered);
 
             }
         });
