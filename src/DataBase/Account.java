@@ -7,6 +7,7 @@ public class Account
     private String email;
     private String username;
     private String password;
+    private String picturePath;
 //    dataType picture
 
     public Account()
@@ -14,13 +15,14 @@ public class Account
 
     }
 
-    public Account(String firstName, String lastName, String email, String username, String password)
+    public Account(String firstName, String lastName, String email, String username, String password,String picturePath)
     {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.username = username;
         this.password = password;
+        this.picturePath=picturePath;
     }
 
 
@@ -38,11 +40,15 @@ public class Account
     }
     public void setUsername(String userName)
     {
-        this.username = username;
+        this.username = userName;
     }
     public void setPassword(String password)
     {
         this.password = password;
+    }
+    public void setPicturePath(String picturePath)
+    {
+        this.picturePath=picturePath;
     }
 //    public void setPicture(dataType picture)
 //    {
@@ -56,6 +62,10 @@ public class Account
     public String getLastName()
     {
         return this.lastName;
+    }
+    public String getPicturePath()
+    {
+        return picturePath;
     }
     public String getEmail()
     {

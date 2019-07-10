@@ -27,7 +27,7 @@ public class Chats
         ArrayList<String> chats = new  ArrayList<>();
         try
         {
-            Scanner input = new Scanner(Paths.get("/home/sajad/Desktop/Sajad/GIT/Zapenger/src/DataBase/Chats/"+sr1+"##"+sr2+".txt"));
+            Scanner input = new Scanner(Paths.get("./src/DataBase/Chats/"+sr1+"##"+sr2+".txt"));
             while (input.hasNext())
             {
                 chats.add(input.nextLine());
@@ -56,7 +56,7 @@ public class Chats
         }
         try
         {
-            BufferedWriter output = new BufferedWriter(new FileWriter("/home/sajad/Desktop/Sajad/GIT/Zapenger/src/DataBase/Chats/"+sr1+"##"+sr2+".txt",true));
+            BufferedWriter output = new BufferedWriter(new FileWriter("./src/DataBase/Chats/"+sr1+"##"+sr2+".txt",true));
             output.write(message);
             output.newLine();
             output.close();
@@ -69,7 +69,7 @@ public class Chats
     public static ArrayList<String> hasChatWith(String userName)
     {
         ArrayList<String> chats= new ArrayList<>();
-        String path = "/home/sajad/Desktop/Sajad/GIT/Zapenger/src/DataBase/Chats/";
+        String path = "./src/DataBase/Chats/";
         File folder = new File(path);
         File[] listOfFiles = folder.listFiles();
         for (int k=0;k<listOfFiles.length;k++)
@@ -77,9 +77,9 @@ public class Chats
             String[] temp = listOfFiles[k].getName().split("##");
             if(temp[0].equals(userName))
             {
-                chats.add(temp[1]);
+                chats.add(temp[1].split("\\.txt")[0]);
             }
-            if ( temp[1].equals(userName))
+            if ( temp[1].split("\\.txt")[0].equals(userName))
             {
                 chats.add(temp[0]);
             }

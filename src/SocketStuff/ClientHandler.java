@@ -1,8 +1,7 @@
 package SocketStuff;
 
+import DataBase.Account;
 import DataBase.AccountDB;
-import DataBase.UserList;
-
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -29,8 +28,6 @@ public class ClientHandler extends Thread
     @Override
     public void run()
     {
-        while (true)
-        {
             try
             {
                 inputStream = socket.getInputStream();
@@ -57,7 +54,6 @@ public class ClientHandler extends Thread
             {
                 System.err.println(error + ":Error setting up input stream!");
             }
-        }
     }
     private void send(String receiveMessage,int converNumber,int type)
     {
@@ -83,6 +79,7 @@ public class ClientHandler extends Thread
                 sentRead.write(/*"&"+userName+":"+*/receiveMessage);
                 sentRead.newLine();
                 sentRead.flush();
+                System.out.println(receiveMessage);
             }
             catch (IOException error)
             {
@@ -125,28 +122,57 @@ public class ClientHandler extends Thread
         String[] temp = command.split("-");
         switch (temp[0])
         {
-            case "##Username":
-                this.userName=temp[1];
-                break;
             case "##Info":
                 int isAuthorized = AccountDB.isAuthorized(temp[1],temp[2]);
                 this.userName=temp[1];
-                ArrayList<ClientHandler> clientList = new ArrayList<>();
-                clientList.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
+                ArrayList<ClientHandler> clientList0 = new ArrayList<>();
+                clientList0.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 switch (isAuthorized)
                 {
                     case 1:
-                        send("##LogedIn",clientList);
+                        send("##LogedIn",clientList0);
                         userName=temp[1];
                         break;
                     case -1:
-                        send("##NotLogedIn",clientList);
+                        send("##NotLogedIn",clientList0);
                         break;
                     case 0:
-                        send("##NotFound",clientList);
+                        send("##NotFound",clientList0);
                         break;
                 }
                 break;
+            case "##AddUser":
+                AccountDB.addAccount(new Account(temp[1],temp[2],temp[3],temp[4],temp[5],temp[6]));
+            case "##AddToChat":
+                Chats.addToChat(temp[3],temp[2],temp[1]);
+                ArrayList<ClientHandler> temp0 = new ArrayList<>();
+                temp0.add(MegaServer.getClientList().get(MegaServer.getClientNumber(temp[1])));
+                send(temp[3],temp0);
+                break;
+            case "##LoadChats":
+                ArrayList<ClientHandler> clientList1 = new ArrayList<>();
+                clientList1.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
+                ArrayList<String> chats = Chats.loadChat(temp[1],temp[2]);
+                send(String.valueOf(chats.size()),clientList1);
+                for (int k=0;k<chats.size();k++)
+                    send(chats.get(k),clientList1);
+                break;
+            case "##ChatWith":
+                ArrayList<ClientHandler> clientList2 = new ArrayList<>();
+                clientList2.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
+                ArrayList<String> listOfChats = Chats.hasChatWith(temp[1]);
+                StringBuilder list = new StringBuilder();
+                for(int k=0;k<listOfChats.size();k++)
+                {
+                    list.ensureCapacity(20*k+2);
+                    list.append(listOfChats.get(k)+"##");
+                }
+                send(list.toString(),clientList2);
+                break;
+            case "##Username":
+                this.userName=temp[1];
+                break;
+
             case "##Chat":
                 if (hasChat(temp[1])!=-1)
                 {

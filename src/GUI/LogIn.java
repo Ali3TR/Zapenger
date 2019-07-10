@@ -6,9 +6,10 @@ import java.awt.*;
 import java.awt.event.*;
 import java.net.Socket;
 import javax.swing.*;
-import javax.swing.event.*;
 
-public class LogIn extends JPanel {
+public class LogIn extends JPanel
+{
+    private static JFrame frame;
     private JButton logIn;
     private JLabel userName;
     private JTextField userNameText;
@@ -22,7 +23,9 @@ public class LogIn extends JPanel {
     private JLabel notFound;
 
 
-    public LogIn() {
+
+    public LogIn()
+    {
         //construct components
         logIn = new JButton ("Log In");
         userName = new JLabel ("UserName:");
@@ -75,11 +78,7 @@ public class LogIn extends JPanel {
                 userNameEntered = userNameText.getText();
                 passEntered = String.valueOf(passText.getPassword());
                 Client.setInfo(userNameEntered,passEntered);
-                System.out.println("Info set");
-                Socket socket = Client.connect();
-                System.out.println("Socket set");
-                int authorize = Client.isAuthorized(socket);
-                System.out.println("Authorize is" + authorize);
+                int authorize = Client.isAuthorized();
                 switch (authorize)
                 {
                     case -1:
@@ -92,7 +91,12 @@ public class LogIn extends JPanel {
                         break;
                     case 1:
                         setVisible(false);
-                        WelcomePage.Hide();
+                        WelcomePage.HideLogin();
+                        frame = new JFrame ("Zapenger");
+                        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                        frame.getContentPane().add (new MainPage(false));
+                        frame.pack();
+                        frame.setVisible (true);
                 }
 
             }
@@ -102,12 +106,18 @@ public class LogIn extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                userNameEntered = userNameText.getText();
-                passEntered = String.valueOf(passText.getPassword());
-                System.out.println(userNameEntered);
-                System.out.println(passEntered);
-
+                setVisible(false);
+                WelcomePage.HideLogin();
+                frame = new JFrame ("SignUp");
+                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.getContentPane().add (new SignUp());
+                frame.pack();
+                frame.setVisible (true);
             }
         });
+    }
+    public static void Hide()
+    {
+        frame.setVisible(false);
     }
 }

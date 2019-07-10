@@ -7,7 +7,7 @@ public class DBTest
 {
     public static void main(String[] args) {
         AccountDB accountDB = new AccountDB();
-        Account account = new Account("Ali","mahdavi","AliM@gmail.com","AliM","123456");
+        Account account = new Account("Ali","mahdavi","AliM@gmail.com","AliM","123456","hghgh");
         System.out.println(AccountDB.isAuthorized("Sajad","12345677"));
     }
 }

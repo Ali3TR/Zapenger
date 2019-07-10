@@ -9,7 +9,7 @@
       <Comment>default administrative connection database</Comment>
       <StateNumber>554</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>625</IntrospectionStateNumber>
+      <IntrospectionStateNumber>635</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
       <Relations>sequence|table|16459|16461|1
@@ -61,7 +61,7 @@
       <Comment>system catalog schema</Comment>
       <StateNumber>351</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>626</IntrospectionStateNumber>
+      <IntrospectionStateNumber>636</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>

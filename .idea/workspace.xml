@@ -2,32 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d71499-b334-4220-8a7c-e5e3f9f0bb68" name="Default Changelist" comment="added Storing chats in text file!">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/0bf9cc17-1fea-4e95-ab6c-0857ce48fd51/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Chats/mdsdna##Na.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/MainPage$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/SignUp$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/SignUp$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/SignUp$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/SignUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/SubChatPage$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/SubChatPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/WelcomePage$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Threads/InputGUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Threads/InputStream.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Threads/OutputStream.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataBase/Chats/mdsdna##Na.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/ChatPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/SignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ/schema/new_schema.IHWLKw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/zapenger.gnFtUQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4003b901-01ff-4065-b176-903f34e98d7b/storage_v2/_src_/database/zapenger.gnFtUQ/schema/proj.XaM0AA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/590fa1e4-86f2-461d-9e3e-0a0e56b628d7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bf9cc17-1fea-4e95-ab6c-0857ce48fd51.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/590fa1e4-86f2-461d-9e3e-0a0e56b628d7/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bf9cc17-1fea-4e95-ab6c-0857ce48fd51/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/590fa1e4-86f2-461d-9e3e-0a0e56b628d7/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/590fa1e4-86f2-461d-9e3e-0a0e56b628d7/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bf9cc17-1fea-4e95-ab6c-0857ce48fd51/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef42e56c-24d1-480b-8667-a4cb38825872.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef42e56c-24d1-480b-8667-a4cb38825872/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef42e56c-24d1-480b-8667-a4cb38825872/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zapenger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Zapenger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/UserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/UserList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/AccountDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/AccountDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Chats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Chats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Chats/Sajad##Ali.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Chats/Sajad##Ali.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Chats/Sajad##Hamed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/DataBase/Chats/Sajad##Hamed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/LogIn$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/LogIn$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/LogIn$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/LogIn$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/LogIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/WelcomePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/WelcomePage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/WelcomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/WelcomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/ClientHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Stream/Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/Stream/Output.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBase/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBase/AccountDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/AccountDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBase/Chats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/Chats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##Ali.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##Ali.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##Hamed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##Hamed.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/WelcomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SocketStuff/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SocketStuff/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/MegaServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/MegaServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Stream/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/Stream/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Stream/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Stream/Output.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,24 +88,22 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Zapenger" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/MegaServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="285">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,56 +111,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SocketStuff/ServerInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="142" column="30" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="42" />
+            <state relative-caret-position="146">
+              <caret line="148" column="95" selection-start-line="148" selection-start-column="95" selection-end-line="148" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2927#2928#0" expanded="true" />
-                <element signature="e#2956#2957#0" expanded="true" />
-                <element signature="e#2994#2995#0" expanded="true" />
-                <element signature="e#3025#3026#0" expanded="true" />
                 <element signature="method#hasChat#0;class#ClientHandler#0" />
-                <element signature="e#3619#3620#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataBase/AccountDB.java">
+        <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="435">
+              <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
+            <state relative-caret-position="260">
+              <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,20 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/LogIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DataBase/Chats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+            <state relative-caret-position="185">
+              <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,24 +182,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/WelcomePage.java">
+        <entry file="file://$PROJECT_DIR$/src/DataBase/AccountDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="45" column="32" selection-start-line="44" selection-start-column="16" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1568#1569#0" expanded="true" />
-                <element signature="e#1607#1608#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Stream/Output.java">
+        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+            <state relative-caret-position="140">
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,6 +223,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>regBtn</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -199,14 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Server.java" />
-        <option value="$PROJECT_DIR$/src/Groupchat/Server.java" />
-        <option value="$PROJECT_DIR$/src/One_to_one_chat/Client.java" />
-        <option value="$PROJECT_DIR$/src/Groupchat/ClientMember.java" />
-        <option value="$PROJECT_DIR$/src/One_to_one_chat/Stream/Input.java" />
-        <option value="$PROJECT_DIR$/src/One_to_one_chat/Stream/Output.java" />
-        <option value="$PROJECT_DIR$/src/Groupchat/ClientStream/InputClient.java" />
-        <option value="$PROJECT_DIR$/src/Groupchat/ClientStream/OutputClient.java" />
         <option value="$PROJECT_DIR$/src/One_to_one_chat/Server.java" />
         <option value="$PROJECT_DIR$/src/Groupchat/MegaServer.java" />
         <option value="$PROJECT_DIR$/src/ServerInput.java" />
@@ -217,7 +249,6 @@
         <option value="$PROJECT_DIR$/src/Main2.java" />
         <option value="$PROJECT_DIR$/src/MegaServer.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/GUI/SignUp.java" />
         <option value="$PROJECT_DIR$/src/GUI/Welcome.java" />
         <option value="$PROJECT_DIR$/src/Main3.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
@@ -227,37 +258,46 @@
         <option value="$PROJECT_DIR$/src/ClientHandler.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/RMI_Interface.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/PassCheck.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/Stream/Input.java" />
         <option value="$PROJECT_DIR$/src/DataBase/chatList.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Main3.java" />
         <option value="$PROJECT_DIR$/src/DataBase/ChatList.java" />
         <option value="$PROJECT_DIR$/src/DataBase/File.java" />
-        <option value="$PROJECT_DIR$/src/DataBase/Chats.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/Main2.java" />
-        <option value="$PROJECT_DIR$/src/GUI/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/GUI/WelcomePage.java" />
-        <option value="$PROJECT_DIR$/src/GUI/StartGUI.java" />
         <option value="$PROJECT_DIR$/src/DataBase/User.java" />
-        <option value="$PROJECT_DIR$/src/DataBase/Account.java" />
         <option value="$PROJECT_DIR$/src/DataBase/UserList.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/test.java" />
-        <option value="$PROJECT_DIR$/src/DataBase/AccountDB.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI/Wait.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/Stream/Output.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/MegaServer.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Stream/Input.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Main2.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Stream/Output.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/SignUp.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/AccountDB.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/Account.java" />
+        <option value="$PROJECT_DIR$/src/GUI/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Main.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SubChatPage.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/Chats.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ChatPage.java" />
+        <option value="$PROJECT_DIR$/src/GUI/WelcomePage.java" />
+        <option value="$PROJECT_DIR$/src/GUI/StartGUI.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Main.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Client.java" />
         <option value="$PROJECT_DIR$/src/GUI/LogIn.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SignUp.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="122" />
-    <option name="y" value="128" />
-    <option name="width" value="1221" />
-    <option name="height" value="674" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="683" />
+    <option name="y" value="25" />
+    <option name="width" value="683" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -267,6 +307,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,14 +344,12 @@
               <item name="Zapenger" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="SocketStuff" type="462c0819:PsiDirectoryNode" />
-              <item name="Stream" type="462c0819:PsiDirectoryNode" />
+              <item name="Threads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +358,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/postgresql-42.2.5.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Zapenger" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -340,12 +380,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="DBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SocketStuff.DBTest" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
       <module name="Zapenger" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SocketStuff.*" />
+          <option name="PATTERN" value="GUI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -363,13 +403,12 @@
     <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SocketStuff.Main2" />
       <module name="Zapenger" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SocketStuff.Main3" />
-      <module name="Zapenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SocketStuff.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -381,13 +420,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SubChatPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.SubChatPage" />
+      <module name="Zapenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MegaServer" />
-        <item itemvalue="Application.DBTest" />
         <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main3" />
+        <item itemvalue="Application.SubChatPage" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -415,7 +467,9 @@
       <workItem from="1561999925854" duration="1630000" />
       <workItem from="1562048114731" duration="798000" />
       <workItem from="1562054695009" duration="10895000" />
-      <workItem from="1562131145053" duration="7604000" />
+      <workItem from="1562131145053" duration="19993000" />
+      <workItem from="1562615770813" duration="10482000" />
+      <workItem from="1562665231508" duration="15986000" />
     </task>
     <task id="LOCAL-00001" summary="added Storing chats in text file!">
       <created>1561634027372</created>
@@ -428,23 +482,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134894000" />
+    <option name="totallyTimeSpent" value="173751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16439395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887133" visible="true" weight="0.1689394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5011287" side_tool="true" weight="0.16666667" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924242" visible="true" weight="0.27850163" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924242" visible="true" weight="0.19869708" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -466,7 +519,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1621212" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16439395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -476,15 +529,15 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.27850163" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3990228" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49924242" visible="true" weight="0.27850163" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007576" side_tool="true" weight="0.27850163" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -506,19 +559,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="added Storing chats in text file!" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Client2.java" />
-    <entry file="file://$PROJECT_DIR$/src/Groupchat/ClientStream/InputClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/Groupchat/ClientStream/OutputClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/Groupchat/ClientMember.java" />
-    <entry file="file://$PROJECT_DIR$/src/OneToOneChat/Server.java" />
-    <entry file="file://$PROJECT_DIR$/src/Groupchat/ChatServer.java" />
-    <entry file="jar:///usr/local/java/jdk-12/lib/src.zip!/java.desktop/javax/swing/JFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="179" selection-start-line="179" selection-end-line="179" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/local/java/jdk-12/lib/src.zip!/java.desktop/java/awt/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -572,7 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/Welcome.java" />
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/RMI_Interface.java" />
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/PassCheck.java" />
@@ -587,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataBase/ChatList.java" />
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://4003b901-01ff-4065-b176-903f34e98d7b/role/postgres" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4003b901-01ff-4065-b176-903f34e98d7b/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -603,69 +635,83 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/590fa1e4-86f2-461d-9e3e-0a0e56b628d7/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataBase/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataBase/User.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ef42e56c-24d1-480b-8667-a4cb38825872/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://ef42e56c-24d1-480b-8667-a4cb38825872/role/postgres">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="das://ef42e56c-24d1-480b-8667-a4cb38825872/role/postgres" />
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java" />
     <entry file="file://$PROJECT_DIR$/src/DataBase/UserList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="386">
           <caret line="84" column="7" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/test.java">
+    <entry file="file://$PROJECT_DIR$/src/DataBase/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="196">
+          <caret line="81" column="34" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+          <folding>
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ed109de7-9017-4ec3-b45a-68e7016495ee/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0bf9cc17-1fea-4e95-ab6c-0857ce48fd51/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataBase/Chats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataBase/Account.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
           <folding>
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="97">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/StartGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/SubChatPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -676,24 +722,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/StartGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/WelcomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Stream/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="68" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="68" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -702,29 +744,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataBase/AccountDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/WelcomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="45" column="32" selection-start-line="44" selection-start-column="16" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-            <element signature="e#1607#1608#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -736,6 +759,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/ServerInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -743,46 +773,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/MegaServer.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="435">
+          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Stream/Output.java">
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="142" column="30" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="42" />
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2927#2928#0" expanded="true" />
-            <element signature="e#2956#2957#0" expanded="true" />
-            <element signature="e#2994#2995#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="method#hasChat#0;class#ClientHandler#0" />
-            <element signature="e#3619#3620#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
+        <state relative-caret-position="140">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -791,20 +822,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/LogIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+        <state relative-caret-position="185">
+          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataBase/Chats.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        <state relative-caret-position="260">
+          <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataBase/AccountDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/MegaServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="148" column="95" selection-start-line="148" selection-start-column="95" selection-end-line="148" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#hasChat#0;class#ClientHandler#0" />
           </folding>
         </state>
       </provider>

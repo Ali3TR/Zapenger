@@ -11,6 +11,6 @@ public class Main
         //sc.close();
         //SocketStuff.Client client = new SocketStuff.Client();
         //Welcome frame = new Welcome();
-        Client client = new Client("Sajad");
+        Client client = new Client();
     }
 }
