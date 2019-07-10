@@ -25,6 +25,7 @@ public class InputGUI extends Thread
         while (true)
         {
             receivedMessage = inputStream.read();
+            chats.setEditable(true);
             System.out.println("recevied");
             String[] temp = receivedMessage.split("##");
             if (temp[0].equals(receiver))
@@ -32,6 +33,7 @@ public class InputGUI extends Thread
             if (temp[0].equals(Client.getUserName()))
                 chats.append("You : "+temp[1]);
             chats.append("\n");
+            chats.setEditable(false);
         }
     }
 }

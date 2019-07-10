@@ -57,6 +57,8 @@ public class ChatPage extends JPanel
         name.setBounds (210, 0, 165, 25);
         status.setBounds (210, 30, 165, 25);
 
+        chats.setEditable(false);
+
         back.addActionListener(new ActionListener()
         {
             @Override

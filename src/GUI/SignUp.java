@@ -93,9 +93,7 @@ public class SignUp extends JPanel
                 {
                     System.err.println(error);
                 }
-
             }
-
         });
 
 
