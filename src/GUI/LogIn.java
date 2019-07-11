@@ -24,7 +24,7 @@ public class LogIn extends JPanel
 
 
 
-    public LogIn()
+    public LogIn(boolean calledBySignUp)
     {
         //construct components
         logIn = new JButton ("Log In");
@@ -91,7 +91,7 @@ public class LogIn extends JPanel
                         break;
                     case 1:
                         setVisible(false);
-                        WelcomePage.HideLogin();
+                        WelcomePage.Hide();
                         frame = new JFrame ("Zapenger");
                         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
                         frame.getContentPane().add (new MainPage(false));
@@ -107,10 +107,13 @@ public class LogIn extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 setVisible(false);
-                WelcomePage.HideLogin();
+                if (calledBySignUp)
+                    SignUp.Hide();
+                else
+                    WelcomePage.Hide();
                 frame = new JFrame ("SignUp");
                 frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-                frame.getContentPane().add (new SignUp());
+                frame.getContentPane().add (new SignUp(true));
                 frame.pack();
                 frame.setVisible (true);
             }

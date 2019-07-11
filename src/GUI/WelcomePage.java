@@ -11,8 +11,7 @@ public class WelcomePage extends JPanel
     private JButton signUp;
     private JLabel welcome;
     private JLabel welcome2;
-    private static JFrame frameLogin;
-    private static JFrame frameSignUp;
+    private static JFrame frame;
 
     public WelcomePage() {
         //construct components
@@ -45,11 +44,11 @@ public class WelcomePage extends JPanel
             {
                 setVisible(false);
                 StartGUI.Hide();
-                frameLogin = new JFrame ("Log In");
-                frameLogin.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-                frameLogin.getContentPane().add (new LogIn());
-                frameLogin.pack();
-                frameLogin.setVisible (true);
+                frame = new JFrame ("Log In");
+                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.getContentPane().add (new LogIn(false));
+                frame.pack();
+                frame.setVisible (true);
             }
         });
 
@@ -60,21 +59,17 @@ public class WelcomePage extends JPanel
             {
                 setVisible(false);
                 StartGUI.Hide();
-                frameLogin = new JFrame ("Sign Up");
-                frameLogin.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-                frameLogin.getContentPane().add (new SignUp());
-                frameLogin.pack();
-                frameLogin.setVisible (true);
+                frame = new JFrame ("Sign Up");
+                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.getContentPane().add (new SignUp(false));
+                frame.pack();
+                frame.setVisible (true);
             }
         });
 
     }
-    public static void HideLogin()
+    public static void Hide()
     {
-        frameLogin.setVisible(false);
-    }
-    public static void HideSignUp()
-    {
-        frameSignUp.setVisible(false);
+        frame.setVisible(false);
     }
 }
