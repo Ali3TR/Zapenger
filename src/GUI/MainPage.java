@@ -60,9 +60,11 @@ public class MainPage extends JPanel
                 public void actionPerformed(ActionEvent e)
                 {
                     setVisible(false);
-                    LogIn.Hide();
+
                     if (visitedChatOnce)
                         ChatPage.Hide();
+                    else
+                        LogIn.Hide();
                     frame = new JFrame ("Zapenger");
                     frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
                     frame.getContentPane().add (new ChatPage(name));

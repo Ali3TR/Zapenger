@@ -4,7 +4,6 @@ import SocketStuff.Client;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.net.Socket;
 import javax.swing.*;
 
 public class LogIn extends JPanel

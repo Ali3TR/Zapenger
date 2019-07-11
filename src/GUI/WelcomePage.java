@@ -3,7 +3,6 @@ package GUI;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.event.*;
 
 public class WelcomePage extends JPanel
 {
@@ -13,7 +12,8 @@ public class WelcomePage extends JPanel
     private JLabel welcome2;
     private static JFrame frame;
 
-    public WelcomePage() {
+    public WelcomePage()
+    {
         //construct components
         logIn = new JButton("Log In");
         signUp = new JButton("Sign Up");

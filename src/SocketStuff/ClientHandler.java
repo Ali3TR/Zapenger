@@ -146,7 +146,11 @@ public class ClientHandler extends Thread
             case "##AddToChat":
                 Chats.addToChat(temp[3],temp[2],temp[1]);
                 ArrayList<ClientHandler> temp0 = new ArrayList<>();
-                temp0.add(MegaServer.getClientList().get(MegaServer.getClientNumber(temp[1])));
+                int temp1=MegaServer.getClientNumber(temp[1]);
+                if(temp1!=-1)
+                {
+                    temp0.add(MegaServer.getClientList().get(temp1));
+                }
                 send(temp[3],temp0);
                 break;
             case "##LoadChats":

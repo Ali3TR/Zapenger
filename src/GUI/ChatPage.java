@@ -82,8 +82,10 @@ public class ChatPage extends JPanel
             {
                 OutputStream.send("##AddToChat-"+userName+"-"+ Client.getUserName()+"-"
                         +Client.getUserName()+"##"+urChats.getText());
+                chats.setEditable(true);
                 chats.append("You : "+urChats.getText());
                 chats.append("\n");
+                chats.setEditable(false);
                 urChats.setText("");
             }
         });
