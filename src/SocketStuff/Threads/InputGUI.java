@@ -26,8 +26,9 @@ public class InputGUI extends Thread
         {
             receivedMessage = inputStream.read();
             chats.setEditable(true);
-            System.out.println("recevied");
             String[] temp = receivedMessage.split("##");
+            if (temp[0].equals("-"))
+                break;
             if (temp[0].equals(receiver))
                 chats.append(receiver+" : "+temp[1]);
             if (temp[0].equals(Client.getUserName()))

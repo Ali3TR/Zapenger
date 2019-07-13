@@ -171,6 +171,7 @@ public class ClientHandler extends Thread
                     list.ensureCapacity(20*k+2);
                     list.append(listOfChats.get(k)+"##");
                 }
+                send("-##-",clientList2);
                 send(list.toString(),clientList2);
                 break;
             case "##Username":

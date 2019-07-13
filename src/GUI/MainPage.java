@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class MainPage extends JPanel
 {
-    private boolean visitedChatOnce= false;
     private static JFrame frame;
     private JButton setting;
     private JButton newChat;
@@ -19,13 +18,13 @@ public class MainPage extends JPanel
 
     public MainPage(boolean visitedChatOnce)
     {
-        this.visitedChatOnce=visitedChatOnce;
-        //construct components
         setting = new JButton ("Setting");
         newChat = new JButton ("Start a new chat");
 
         OutputStream.send("##ChatWith-"+Client.getUserName());
         String receiveMessage = InputStream.read();
+        if (receiveMessage.split("##")[0].equals("-"))
+            receiveMessage = InputStream.read();
         ArrayList<String> listOfChats = new ArrayList<>();
         System.out.println("message received : "+receiveMessage);
         String[] temp = receiveMessage.split("##");
@@ -50,7 +49,6 @@ public class MainPage extends JPanel
         newChat.setBounds (160, 0, 155, 25);
         for (int k=0;k<buttons.size();k++)
             buttons.get(k).setBounds (0, 45+k*27, 315, 25);
-
         for (int k=0;k<buttons.size();k++)
         {
             String name = listOfChats.get(k);

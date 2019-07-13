@@ -33,6 +33,7 @@ public class ChatPage extends JPanel
         name = new JLabel (userName);
         status = new JLabel ("");
 
+
         //adjust size and set layout
         setPreferredSize (new Dimension(500, 502));
         setLayout (null);
@@ -59,11 +60,14 @@ public class ChatPage extends JPanel
 
         chats.setEditable(false);
 
+        InputGUI inputGUI = new InputGUI(chats,userName);
+        inputGUI.start();
         back.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
             {
+
                 setVisible(false);
                 MainPage.Hide();
                 frame = new JFrame ("Zapenger");
@@ -73,7 +77,6 @@ public class ChatPage extends JPanel
                 frame.setVisible (true);
             }
         });
-
 
         send.addActionListener(new ActionListener()
         {
@@ -89,9 +92,6 @@ public class ChatPage extends JPanel
                 urChats.setText("");
             }
         });
-
-        InputGUI inputGUI = new InputGUI(chats,userName);
-        inputGUI.start();
     }
     public static void Hide()
     {

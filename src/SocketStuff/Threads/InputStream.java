@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
-public class InputStream
+public class InputStream extends Thread
 {
     private Socket socket;
     public static BufferedReader receiveRead;
@@ -35,6 +35,7 @@ public class InputStream
         {
             System.out.println(error);
         }
+
         return "Error";
     }
 }

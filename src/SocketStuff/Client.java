@@ -16,6 +16,7 @@ public class Client
         try
         {
             Client.socket = new Socket("127.0.0.1", 37425);
+            System.out.println("Socket set");
         }
         catch (IOException error)
         {
@@ -23,6 +24,7 @@ public class Client
         }
         OutputStream output= new OutputStream(socket);
         InputStream input=new InputStream(socket);
+        System.out.println("starting GUI");
         StartGUI startGUI = new StartGUI();
         /*try
         {
