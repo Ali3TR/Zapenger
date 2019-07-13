@@ -9,21 +9,17 @@ import DataBase.Chats;
 
 public class ClientHandler extends Thread
 {
+    private boolean flag=true;
     private Socket socket;
     private String userName;
     private ArrayList<ClientHandler> chatList = new ArrayList<>();
-    private ArrayList<ArrayList<String>> groupList = new ArrayList<>();
-    private int chatNumber=-1;
-    private int groupNumber=-1;
-    InputStream inputStream;
-    BufferedReader receiveRead;
-    OutputStream outputStream;
-    BufferedWriter sentRead;
-    private AccountDB accountDB;
-    public ClientHandler(Socket socket,AccountDB accountDB)
+    private InputStream inputStream;
+    private BufferedReader receiveRead;
+    private OutputStream outputStream;
+    private BufferedWriter sentRead;
+    public ClientHandler(Socket socket)
     {
         this.socket=socket;
-        this.accountDB=accountDB;
     }
     @Override
     public void run()
@@ -33,7 +29,7 @@ public class ClientHandler extends Thread
                 inputStream = socket.getInputStream();
                 receiveRead = new BufferedReader(new InputStreamReader(inputStream));
                 String receiveMessage;
-                while(true)
+                while(flag)
                 {
                     if((receiveMessage = receiveRead.readLine()) != null)
                     {
@@ -142,7 +138,16 @@ public class ClientHandler extends Thread
                 }
                 break;
             case "##AddUser":
-                AccountDB.addAccount(new Account(temp[1],temp[2],temp[3],temp[4],temp[5],temp[6]));
+                AccountDB.addAccount(new Account(temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7]));
+                break;
+            case "##SetStatus":
+                AccountDB.setStatus(userName,temp[1]);
+                break;
+            case "##Status":
+                ArrayList<ClientHandler> clientList2 = new ArrayList<>();
+                clientList2.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
+                send("##"+AccountDB.getStatus(temp[1]),clientList2);
+                break;
             case "##AddToChat":
                 Chats.addToChat(temp[3],temp[2],temp[1]);
                 ArrayList<ClientHandler> temp0 = new ArrayList<>();
@@ -162,8 +167,8 @@ public class ClientHandler extends Thread
                     send(chats.get(k),clientList1);
                 break;
             case "##ChatWith":
-                ArrayList<ClientHandler> clientList2 = new ArrayList<>();
-                clientList2.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
+                ArrayList<ClientHandler> clientList3 = new ArrayList<>();
+                clientList3.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 ArrayList<String> listOfChats = Chats.hasChatWith(temp[1]);
                 StringBuilder list = new StringBuilder();
                 for(int k=0;k<listOfChats.size();k++)
@@ -171,47 +176,13 @@ public class ClientHandler extends Thread
                     list.ensureCapacity(20*k+2);
                     list.append(listOfChats.get(k)+"##");
                 }
-                send("-##-",clientList2);
-                send(list.toString(),clientList2);
+                send(list.toString(),clientList3);
                 break;
             case "##Username":
                 this.userName=temp[1];
                 break;
-
-            case "##Chat":
-                if (hasChat(temp[1])!=-1)
-                {
-                    chatNumber=hasChat(temp[1]);
-                }
-                else
-                {
-                    chatList.add(MegaServer.getClientList().get(MegaServer.getClientNumber(temp[1])));
-                    MegaServer.getClientList().get(MegaServer.getClientNumber(temp[1])).getChatList().add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
-                    chatNumber=chatList.size()-1;
-                }
-                break;
-            case "##Group":
-                if (temp.length==2)
-                {
-                    for (int k=0;k<groupList.size();k++)
-                        if (groupList.get(k).get(0).equalsIgnoreCase(temp[1]))
-                        {
-                            groupNumber=k;
-                            break;
-                        }
-                }
-                else
-                {
-                    ArrayList<String> tempArray = new ArrayList<>();
-                    tempArray.add(temp[1]);
-                    for (int k=2;k<temp.length;k++)
-                        tempArray.add(temp[k]);
-                    groupList.add(tempArray);
-                    groupNumber=groupList.size()-1;
-                }
             case "##Close":
                 close();
-
                 break;
             default:
                 System.out.println("You can not send a text starting with ##.");
@@ -219,12 +190,15 @@ public class ClientHandler extends Thread
     }
     public void close()
     {
+        AccountDB.setStatus(userName,"Offline");
         try
         {
+            flag=false;
             receiveRead.close();
             sentRead.close();
             inputStream.close();
             outputStream.close();
+            socket.close();
         }
         catch (IOException error)
         {

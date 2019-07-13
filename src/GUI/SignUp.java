@@ -4,6 +4,7 @@
 package GUI;
 
 import SocketStuff.Client;
+import SocketStuff.Threads.InputStream;
 import SocketStuff.Threads.OutputStream;
 import java.awt.*;
 import java.awt.event.*;
@@ -117,7 +118,8 @@ public class SignUp extends JPanel
                             strEmail+"-"+
                             strUserName+"-"+
                             strPassWord+"-"+
-                            picturePath);
+                            picturePath+"-"+
+                            "Offline");
                     message.setText("Account created successfully!");
                     message.setBounds (100, 300, 220, 25);
                     message.setVisible(true);
@@ -136,7 +138,19 @@ public class SignUp extends JPanel
                 else
                     WelcomePage.Hide();
                 frame = new JFrame ("Log In");
-                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.addWindowListener(new WindowAdapter()
+                {
+                    @Override
+                    public void windowClosing(WindowEvent e)
+                    {
+                        OutputStream.send("##Close");
+                        OutputStream.close();
+                        InputStream.close();
+                        Client.close();
+                        e.getWindow().dispose();
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    }
+                });
                 frame.getContentPane().add (new LogIn(true));
                 frame.pack();
                 frame.setVisible (true);

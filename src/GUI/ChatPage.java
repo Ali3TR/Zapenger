@@ -2,12 +2,16 @@ package GUI;
 
 import SocketStuff.Client;
 import SocketStuff.Threads.InputGUI;
+import SocketStuff.Threads.InputStream;
 import SocketStuff.Threads.OutputStream;
+import SocketStuff.Threads.Status;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class ChatPage extends JPanel
 {
@@ -31,7 +35,8 @@ public class ChatPage extends JPanel
         sendFile = new JButton ("Send File");
         profilePic = new JButton ("");
         name = new JLabel (userName);
-        status = new JLabel ("");
+        status = new JLabel ("NotSetYet");
+
 
 
         //adjust size and set layout
@@ -60,18 +65,34 @@ public class ChatPage extends JPanel
 
         chats.setEditable(false);
 
-        InputGUI inputGUI = new InputGUI(chats,userName);
+        InputGUI inputGUI = new InputGUI(chats,userName,status);
         inputGUI.start();
+        Status status1 = new Status(userName);
+        status1.start();
         back.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-
+                status1.end();
+                inputGUI.end();
+                OutputStream.send("##Status-"+userName);
                 setVisible(false);
                 MainPage.Hide();
                 frame = new JFrame ("Zapenger");
-                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.addWindowListener(new WindowAdapter()
+                {
+                    @Override
+                    public void windowClosing(WindowEvent e)
+                    {
+                        OutputStream.send("##Close");
+                        OutputStream.close();
+                        InputStream.close();
+                        Client.close();
+                        e.getWindow().dispose();
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    }
+                });
                 frame.getContentPane().add (new MainPage(true));
                 frame.pack();
                 frame.setVisible (true);

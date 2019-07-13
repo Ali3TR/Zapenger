@@ -1,5 +1,6 @@
 package DataBase;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class AccountDB
 {
@@ -25,13 +26,46 @@ public class AccountDB
     {
         try
         {
-            preparedStatement = connection.prepareStatement("insert into account values (default, ?, ?, ?, ?, ?, ?)");
+            preparedStatement = connection.prepareStatement("insert into account values (default, ?, ?, ?, ?, ?, ?, ?)");
             preparedStatement.setString(1, account.getFirstName());
             preparedStatement.setString(2, account.getLastName());
             preparedStatement.setString(3, account.getEmail());
             preparedStatement.setString(4, account.getUsername());
             preparedStatement.setString(5, account.getPassword());
             preparedStatement.setString(6, account.getPicturePath());
+            preparedStatement.setString(7, account.getStatus());
+            preparedStatement.executeUpdate();
+        }
+        catch (SQLException error)
+        {
+            System.err.println(error);
+        }
+    }
+
+    public static String getStatus(String username)
+    {
+        try
+        {
+            preparedStatement = connection.prepareStatement("select * from account where username = ? ");
+            preparedStatement.setString(1,username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            resultSet.next();
+            return resultSet.getString("status");
+        }
+        catch (SQLException error)
+        {
+            System.err.println(error);
+        }
+        return "Notfound";
+    }
+
+    public static void setStatus(String username,String status)
+    {
+        try
+        {
+            preparedStatement = connection.prepareStatement("update account set status = ? where username = ?");
+            preparedStatement.setString(1, status);
+            preparedStatement.setString(2, username);
             preparedStatement.executeUpdate();
         }
         catch (SQLException error)

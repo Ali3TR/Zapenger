@@ -73,4 +73,16 @@ public class Client
     {
         return Client.userName;
     }
+    public static void close()
+    {
+        try
+        {
+            socket.close();
+
+        }
+        catch (IOException error)
+        {
+            System.err.println(error);
+        }
+    }
 }

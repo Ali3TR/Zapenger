@@ -6,14 +6,13 @@ import java.net.Socket;
 
 public class InputStream extends Thread
 {
-    private Socket socket;
     public static BufferedReader receiveRead;
+    public static java.io.InputStream inputStream;
     public InputStream(Socket socket)
     {
-        this.socket=socket;
         try
         {
-            java.io.InputStream inputStream = socket.getInputStream();
+            inputStream = socket.getInputStream();
             receiveRead = new BufferedReader(new InputStreamReader(inputStream));
         }
         catch (IOException error)
@@ -37,5 +36,17 @@ public class InputStream extends Thread
         }
 
         return "Error";
+    }
+    public static void close()
+    {
+        try
+        {
+            receiveRead.close();
+            inputStream.close();
+        }
+        catch (IOException error)
+        {
+            System.err.println(error);
+        }
     }
 }

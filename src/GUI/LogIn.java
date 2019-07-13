@@ -1,6 +1,8 @@
 package GUI;
 
 import SocketStuff.Client;
+import SocketStuff.Threads.InputStream;
+import SocketStuff.Threads.OutputStream;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -91,8 +93,22 @@ public class LogIn extends JPanel
                     case 1:
                         setVisible(false);
                         WelcomePage.Hide();
+                        OutputStream.send("##SetStatus-Online");
                         frame = new JFrame ("Zapenger");
-                        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                        frame.addWindowListener(new WindowAdapter()
+                        {
+                            @Override
+                            public void windowClosing(WindowEvent e)
+                            {
+                                OutputStream.send("##Close");
+                                OutputStream.close();
+                                InputStream.close();
+                                Client.close();
+                                System.out.println("all stuffs are closed");
+                                e.getWindow().dispose();
+                                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                            }
+                        });
                         frame.getContentPane().add (new MainPage(false));
                         frame.pack();
                         frame.setVisible (true);
@@ -111,7 +127,19 @@ public class LogIn extends JPanel
                 else
                     WelcomePage.Hide();
                 frame = new JFrame ("SignUp");
-                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.addWindowListener(new WindowAdapter()
+                {
+                    @Override
+                    public void windowClosing(WindowEvent e)
+                    {
+                        OutputStream.send("##Close");
+                        OutputStream.close();
+                        InputStream.close();
+                        Client.close();
+                        e.getWindow().dispose();
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    }
+                });
                 frame.getContentPane().add (new SignUp(true));
                 frame.pack();
                 frame.setVisible (true);

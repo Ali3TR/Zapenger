@@ -6,15 +6,14 @@ import java.net.Socket;
 
 public class OutputStream
 {
-    private Socket socket;
     private static BufferedWriter sentRead;
+    private static java.io.OutputStream outputStream;
 
     public OutputStream(Socket socket)
     {
-        this.socket=socket;
         try
         {
-            java.io.OutputStream outputStream = socket.getOutputStream();
+            outputStream = socket.getOutputStream();
             sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
         }
         catch (IOException error)
@@ -34,5 +33,18 @@ public class OutputStream
         {
             System.err.println(error);
         }
+    }
+    public static void close()
+    {
+        try
+        {
+            sentRead.close();
+            outputStream.close();
+        }
+        catch (IOException error)
+        {
+            System.err.println(error);
+        }
+
     }
 }

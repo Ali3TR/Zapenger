@@ -8,6 +8,7 @@ public class Account
     private String username;
     private String password;
     private String picturePath;
+    private String status;
 //    dataType picture
 
     public Account()
@@ -15,7 +16,7 @@ public class Account
 
     }
 
-    public Account(String firstName, String lastName, String email, String username, String password,String picturePath)
+    public Account(String firstName, String lastName, String email, String username, String password,String picturePath,String status)
     {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -23,6 +24,7 @@ public class Account
         this.username = username;
         this.password = password;
         this.picturePath=picturePath;
+        this.status=status;
     }
 
 
@@ -78,6 +80,10 @@ public class Account
     public String getPassword()
     {
         return this.password;
+    }
+    public String getStatus()
+    {
+        return this.status;
     }
 //    public dataType getPicture()
 //    {

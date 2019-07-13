@@ -1,12 +1,17 @@
 package GUI;
 
 import SocketStuff.Client;
+import SocketStuff.Threads.InputGUI;
 import SocketStuff.Threads.InputStream;
 import SocketStuff.Threads.OutputStream;
+import SocketStuff.Threads.Status;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
 public class MainPage extends JPanel
@@ -23,8 +28,8 @@ public class MainPage extends JPanel
 
         OutputStream.send("##ChatWith-"+Client.getUserName());
         String receiveMessage = InputStream.read();
-        if (receiveMessage.split("##")[0].equals("-"))
-            receiveMessage = InputStream.read();
+//        if (receiveMessage.split("##")[0].equals("-"))
+//            receiveMessage = InputStream.read();
         ArrayList<String> listOfChats = new ArrayList<>();
         System.out.println("message received : "+receiveMessage);
         String[] temp = receiveMessage.split("##");
@@ -60,11 +65,30 @@ public class MainPage extends JPanel
                     setVisible(false);
 
                     if (visitedChatOnce)
+                    {
                         ChatPage.Hide();
+                        InputGUI.con();
+                        Status.con();
+                    }
+
                     else
                         LogIn.Hide();
                     frame = new JFrame ("Zapenger");
-                    frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                    frame.addWindowListener(new WindowAdapter()
+                    {
+                        @Override
+                        public void windowClosing(WindowEvent e)
+                        {
+                            OutputStream.send("##Close");
+                            InputGUI.end();
+                            Status.end();
+                            OutputStream.close();
+                            InputStream.close();
+                            Client.close();
+                            e.getWindow().dispose();
+                            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        }
+                    });
                     frame.getContentPane().add (new ChatPage(name));
                     frame.pack();
                     frame.setVisible (true);

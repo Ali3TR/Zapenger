@@ -1,5 +1,9 @@
 package GUI;
 
+import SocketStuff.Client;
+import SocketStuff.Threads.InputStream;
+import SocketStuff.Threads.OutputStream;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -45,7 +49,19 @@ public class WelcomePage extends JPanel
                 setVisible(false);
                 StartGUI.Hide();
                 frame = new JFrame ("Log In");
-                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.addWindowListener(new WindowAdapter()
+                {
+                    @Override
+                    public void windowClosing(WindowEvent e)
+                    {
+                        OutputStream.send("##Close");
+                        OutputStream.close();
+                        InputStream.close();
+                        Client.close();
+                        e.getWindow().dispose();
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    }
+                });
                 frame.getContentPane().add (new LogIn(false));
                 frame.pack();
                 frame.setVisible (true);
@@ -60,7 +76,19 @@ public class WelcomePage extends JPanel
                 setVisible(false);
                 StartGUI.Hide();
                 frame = new JFrame ("Sign Up");
-                frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+                frame.addWindowListener(new WindowAdapter()
+                {
+                    @Override
+                    public void windowClosing(WindowEvent e)
+                    {
+                        OutputStream.send("##Close");
+                        OutputStream.close();
+                        InputStream.close();
+                        Client.close();
+                        e.getWindow().dispose();
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    }
+                });
                 frame.getContentPane().add (new SignUp(false));
                 frame.pack();
                 frame.setVisible (true);

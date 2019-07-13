@@ -30,7 +30,7 @@ public class MegaServer
             while (!finished)
             {
                 Socket socket = serverSocket.accept();
-                ClientHandler clientHandler = new ClientHandler(socket,accountDB);
+                ClientHandler clientHandler = new ClientHandler(socket);
                 clientList.add(clientHandler);
                 clientHandler.start();
             }
