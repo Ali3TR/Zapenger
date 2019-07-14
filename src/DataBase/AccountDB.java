@@ -1,6 +1,6 @@
 package DataBase;
+
 import java.sql.*;
-import java.util.ArrayList;
 
 public class AccountDB
 {
@@ -73,6 +73,73 @@ public class AccountDB
             System.err.println(error);
         }
     }
+
+    public static void updateInfo(Account account)
+    {
+        if (!account.getFirstName().equals(""))
+            updateOneInfo(account.getUsername(),"firstname",account.getFirstName());
+        if (!account.getLastName().equals(""))
+            updateOneInfo(account.getUsername(),"lastname",account.getLastName());
+        if (!account.getEmail().equals(""))
+            updateOneInfo(account.getUsername(),"email",account.getEmail());
+        if (!account.getPassword().equals(""))
+            updateOneInfo(account.getUsername(),"pass",account.getPassword());
+        if (!account.getPicturePath().equals(""))
+            updateOneInfo(account.getUsername(),"picturepath",account.getPicturePath());
+
+    }
+
+    public static void updateOneInfo(String username,String column, String value)
+    {
+        try
+        {
+            preparedStatement = connection.prepareStatement("update account set "+column+" = ? where username = ?");
+            preparedStatement.setString(1, value);
+            preparedStatement.setString(2, username);
+            preparedStatement.executeUpdate();
+        }
+        catch (SQLException error)
+        {
+            System.err.println(error);
+        }
+    }
+
+    public static String isUser(String username)
+    {
+        try
+        {
+            preparedStatement = connection.prepareStatement("select * from account");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next())
+            {
+                if (resultSet.getString("username").equals(username))
+                    return "Found";
+            }
+        }
+        catch (SQLException error)
+        {
+            System.err.println(error);
+        }
+        return "NotFound";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void getAccounts() throws Exception
     {

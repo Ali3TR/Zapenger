@@ -66,6 +66,30 @@ public class Chats
             System.err.println(error);
         }
     }
+    public static void startChat(String sender,String receiver)
+    {
+        String sr1;
+        String sr2;
+        if (sender.compareTo(receiver)>0)
+        {
+            sr1=sender;
+            sr2=receiver;
+        }
+        else
+        {
+            sr1=receiver;
+            sr2=sender;
+        }
+        try
+        {
+            BufferedWriter output = new BufferedWriter(new FileWriter("./src/DataBase/Chats/"+sr1+"##"+sr2+".txt",true));
+            output.close();
+        }
+        catch (IOException error)
+        {
+            System.err.println(error);
+        }
+    }
     public static ArrayList<String> hasChatWith(String userName)
     {
         ArrayList<String> chats= new ArrayList<>();

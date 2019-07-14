@@ -140,6 +140,10 @@ public class ClientHandler extends Thread
             case "##AddUser":
                 AccountDB.addAccount(new Account(temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7]));
                 break;
+            case "##UpdateUser":
+                AccountDB.updateInfo(new Account(temp[1].trim(),temp[2].trim()
+                        ,temp[3].trim(),userName,temp[4].trim(),temp[5].trim(),"Offline"));
+                break;
             case "##SetStatus":
                 AccountDB.setStatus(userName,temp[1]);
                 break;
@@ -180,6 +184,15 @@ public class ClientHandler extends Thread
                 break;
             case "##Username":
                 this.userName=temp[1];
+                break;
+            case "##StartChat":
+                ArrayList<ClientHandler> clientList4 = new ArrayList<>();
+                clientList4.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
+                String temp5 = AccountDB.isUser(temp[1]);
+                if (temp5.equals("Found"))
+                    Chats.startChat(userName,temp[1]);
+                send(temp5,clientList4);
+
                 break;
             case "##Close":
                 close();

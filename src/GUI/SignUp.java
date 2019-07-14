@@ -9,6 +9,10 @@ import SocketStuff.Threads.OutputStream;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import javax.swing.*;
 
 
@@ -34,10 +38,12 @@ public class SignUp extends JPanel
     private JPasswordField passWordField;
     private String strPassWord;
 
-    private String picturePath = "./src/DataBase/ProfilePicture/defaultProfilePicture.jpg";
+    private String pictureName = "##default.png";
+    private Path path1;
 
     private JButton regBtn;
     private JButton picBtn;
+    private JLabel picDec;
 
     private JLabel haveAccount;
     private JButton loginBtn;
@@ -56,6 +62,7 @@ public class SignUp extends JPanel
         userName = new JLabel ("UserName:");
         passWord = new JLabel ("PassWord:");
         picBtn = new JButton ("Choose Picture");
+        picDec = new JLabel("Picture scale should be 1 X 1.");
         regBtn = new JButton ("Register");
         firstNameField = new JTextField ("",5);
         lastNameField = new JTextField ("",5);
@@ -83,8 +90,8 @@ public class SignUp extends JPanel
                 int x = fileChooser.showOpenDialog(null);
                 if (x == JFileChooser.APPROVE_OPTION) {
                     File f1 = fileChooser.getSelectedFile();
-                    picturePath = f1.getAbsolutePath();
-                    System.out.println(picturePath);
+                    path1 = Paths.get(f1.getAbsolutePath());
+                    pictureName = f1.getName();
                 }
             }
         });
@@ -96,7 +103,7 @@ public class SignUp extends JPanel
             public void actionPerformed(ActionEvent e)
             {
 
-                strFirstName = userNameField.getText();
+                strFirstName = firstName.getText();
                 strLastName = lastNameField.getText();
                 strEmail = emailField.getText();
                 strUserName = userNameField.getText();
@@ -111,6 +118,20 @@ public class SignUp extends JPanel
                 }
                 else
                 {
+                    if (!pictureName.equals("##default.png"))
+                    {
+                        Path path2 = Paths.get("./src/DataBase/ProfilePicture/"+userName+".jpg");
+                        try
+                        {
+                            Files.copy(path1,path2, StandardCopyOption.REPLACE_EXISTING);
+                        }
+                        catch (IOException error)
+                        {
+                            System.err.println(error);
+                        }
+                        pictureName=strUserName;
+                    }
+
                     Client.setInfo(strUserName,strPassWord);
                     OutputStream.send("##AddUser-"+
                             strFirstName+"-"+
@@ -118,7 +139,7 @@ public class SignUp extends JPanel
                             strEmail+"-"+
                             strUserName+"-"+
                             strPassWord+"-"+
-                            picturePath+"-"+
+                            pictureName+"-"+
                             "Offline");
                     message.setText("Account created successfully!");
                     message.setBounds (100, 300, 220, 25);
@@ -172,6 +193,7 @@ public class SignUp extends JPanel
         add (haveAccount);
         add (loginBtn);
         add(message);
+        add(picDec);
 
         //set component bounds (only needed by Absolute Positioning)
         regBtn.setBounds (145, 265, 100, 20);
@@ -180,7 +202,8 @@ public class SignUp extends JPanel
         email.setBounds (20, 105, 100, 25);
         userName.setBounds (20, 145, 100, 25);
         passWord.setBounds (20, 185, 100, 25);
-        picBtn.setBounds (20, 225, 150, 25);
+        picDec.setBounds(20,225,220,25);
+        picBtn.setBounds (240, 225, 150, 25);
         firstNameField.setBounds (110, 25, 125, 25);
         lastNameField.setBounds (110, 65, 125, 25);
         emailField.setBounds (110, 105, 275, 25);

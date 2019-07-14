@@ -18,7 +18,7 @@ public class MainPage extends JPanel
     private JButton newChat;
     private ArrayList<JButton> buttons= new ArrayList<>();
 
-    public MainPage(boolean visitedChatOnce)
+    public MainPage(boolean calledByChatPage)
     {
         setting = new JButton ("Setting");
         newChat = new JButton ("Start a new chat");
@@ -30,8 +30,9 @@ public class MainPage extends JPanel
         ArrayList<String> listOfChats = new ArrayList<>();
         System.out.println("message received : "+receiveMessage);
         String[] temp = receiveMessage.split("##");
-        for (int k=0;k<temp.length;k++)
-            listOfChats.add(temp[k]);
+        if (!receiveMessage.equals(""))
+            for (int k=0;k<temp.length;k++)
+                listOfChats.add(temp[k]);
         for (int k =0;k<listOfChats.size();k++)
             buttons.add(new JButton (listOfChats.get(k)));
 
@@ -61,14 +62,13 @@ public class MainPage extends JPanel
                 {
                     setVisible(false);
 
-                    if (visitedChatOnce)
+                    if (calledByChatPage)
                     {
                         ChatPage.Hide();
                         InputGUI.con();
                         GetStatus.con();
                         OutputGUI.con();
                     }
-
                     else
                         LogIn.Hide();
                     frame = new JFrame ("Zapenger");
@@ -88,12 +88,59 @@ public class MainPage extends JPanel
                             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         }
                     });
-                    frame.getContentPane().add (new ChatPage(name));
+                    frame.getContentPane().add (new ChatPage(name,true));
                     frame.pack();
                     frame.setVisible (true);
                 }
             });
         }
+        setting.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                frame = new JFrame ("Setting");
+                frame.addWindowListener(new WindowAdapter()
+                {
+                    @Override
+                    public void windowClosing(WindowEvent e)
+                    {
+                        OutputStream.send("##Close");
+                        OutputStream.close();
+                        InputStream.close();
+                        Client.close();
+                        e.getWindow().dispose();
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    }
+                });
+                frame.getContentPane().add (new Setting(calledByChatPage));
+                frame.pack();
+                frame.setVisible (true);
+            }
+        });
+
+        newChat.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                frame = new JFrame("Start a new Chat");
+                frame.addWindowListener(new WindowAdapter()
+                {
+                    @Override
+                    public void windowClosing(WindowEvent e)
+                    {
+                        OutputStream.send("##Close");
+                        OutputStream.close();
+                        InputStream.close();
+                        Client.close();
+                        e.getWindow().dispose();
+                    }
+                });
+                frame.getContentPane().add(new NewChat(calledByChatPage));
+                frame.pack();
+                frame.setVisible(true);
+            }
+        });
     }
     public static void Hide()
     {

@@ -28,7 +28,7 @@ public class StartGUI
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
-        frame.getContentPane().add (new WelcomePage());
+        frame.getContentPane().add (new WelcomePage(false));
         frame.pack();
         frame.setVisible (true);
 

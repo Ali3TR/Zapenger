@@ -22,6 +22,7 @@ public class LogIn extends JPanel
     private String passEntered;
     private JLabel incorrect;
     private JLabel notFound;
+    private JLabel fieldEmpty;
 
 
 
@@ -37,10 +38,13 @@ public class LogIn extends JPanel
         signUp = new JButton ("Sign Up");
         incorrect = new JLabel ("Wrong Password!");
         notFound = new JLabel ("Username not found!");
+        fieldEmpty = new JLabel ("Fill All the Fields!");
+
 
 
         incorrect.setVisible(false);
         notFound.setVisible(false);
+        fieldEmpty.setVisible(false);
 
         //adjust size and set layout
         setPreferredSize (new Dimension (258, 249));
@@ -56,6 +60,7 @@ public class LogIn extends JPanel
         add (signUp);
         add (incorrect);
         add (notFound);
+        add(fieldEmpty);
 
         //set component bounds (only needed by Absolute Positioning)
         logIn.setBounds (80, 155, 100, 20);
@@ -65,8 +70,9 @@ public class LogIn extends JPanel
         passText.setBounds (20, 105, 220, 30);
         noAccount.setBounds (15, 200, 225, 15);
         signUp.setBounds (85, 220, 90, 20);
-        incorrect.setBounds (70, 165, 125, 30);
-        notFound.setBounds (57, 165, 151, 30);
+        incorrect.setBounds (70, 170, 125, 30);
+        notFound.setBounds (57, 170, 151, 30);
+        fieldEmpty.setBounds(67,170,151,30);
 
 
 
@@ -76,43 +82,55 @@ public class LogIn extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
+
                 userNameEntered = userNameText.getText();
                 passEntered = String.valueOf(passText.getPassword());
-                Client.setInfo(userNameEntered,passEntered);
-                int authorize = Client.isAuthorized();
-                switch (authorize)
+                if (userNameEntered.equals("") || passEntered.equals(""))
                 {
-                    case -1:
-                        notFound.setVisible(false);
-                        incorrect.setVisible(true);
-                        break;
-                    case 0:
-                        incorrect.setVisible(false);
-                        notFound.setVisible(true);
-                        break;
-                    case 1:
-                        setVisible(false);
-                        WelcomePage.Hide();
-                        OutputStream.send("##SetStatus-Online");
-                        frame = new JFrame ("Zapenger");
-                        frame.addWindowListener(new WindowAdapter()
-                        {
-                            @Override
-                            public void windowClosing(WindowEvent e)
-                            {
-                                OutputStream.send("##Close");
-                                OutputStream.close();
-                                InputStream.close();
-                                Client.close();
-                                System.out.println("all stuffs are closed");
-                                e.getWindow().dispose();
-                                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                            }
-                        });
-                        frame.getContentPane().add (new MainPage(false));
-                        frame.pack();
-                        frame.setVisible (true);
+                    fieldEmpty.setVisible(true);
+
                 }
+                else
+                {
+                    Client.setInfo(userNameEntered,passEntered);
+                    int authorize = Client.isAuthorized();
+                    switch (authorize)
+                    {
+                        case -1:
+                            notFound.setVisible(false);
+                            incorrect.setVisible(true);
+                            fieldEmpty.setVisible(false);
+                            break;
+                        case 0:
+                            incorrect.setVisible(false);
+                            notFound.setVisible(true);
+                            fieldEmpty.setVisible(false);
+                            break;
+                        case 1:
+                            setVisible(false);
+                            WelcomePage.Hide();
+                            OutputStream.send("##SetStatus-Online");
+                            frame = new JFrame ("Zapenger");
+                            frame.addWindowListener(new WindowAdapter()
+                            {
+                                @Override
+                                public void windowClosing(WindowEvent e)
+                                {
+                                    OutputStream.send("##Close");
+                                    OutputStream.close();
+                                    InputStream.close();
+                                    Client.close();
+                                    System.out.println("all stuffs are closed");
+                                    e.getWindow().dispose();
+                                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                                }
+                            });
+                            frame.getContentPane().add (new MainPage(false));
+                            frame.pack();
+                            frame.setVisible (true);
+                    }
+                }
+
 
             }
         });

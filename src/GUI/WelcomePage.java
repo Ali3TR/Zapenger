@@ -16,7 +16,7 @@ public class WelcomePage extends JPanel
     private JLabel welcome2;
     private static JFrame frame;
 
-    public WelcomePage()
+    public WelcomePage(boolean calledBySetting)
     {
         //construct components
         logIn = new JButton("Log In");
@@ -47,7 +47,10 @@ public class WelcomePage extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 setVisible(false);
-                StartGUI.Hide();
+                if (calledBySetting)
+                    Setting.Hide();
+                else
+                    StartGUI.Hide();
                 frame = new JFrame ("Log In");
                 frame.addWindowListener(new WindowAdapter()
                 {
@@ -74,7 +77,10 @@ public class WelcomePage extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 setVisible(false);
-                StartGUI.Hide();
+                if (calledBySetting)
+                    Setting.Hide();
+                else
+                    StartGUI.Hide();
                 frame = new JFrame ("Sign Up");
                 frame.addWindowListener(new WindowAdapter()
                 {

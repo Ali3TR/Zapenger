@@ -7,6 +7,7 @@ public class DBTest
 {
     public static void main(String[] args) {
         AccountDB accountDB = new AccountDB();
-        System.out.println(AccountDB.getStatus("Ali"));;
+        AccountDB.updateInfo(new Account("MohamadSajad","","","Sajad","","",""));
+        //System.out.println("hiii- Sajad Mohamad ----".split("-")[1].trim());
     }
 }

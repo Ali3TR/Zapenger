@@ -3,9 +3,13 @@ package GUI;
 import SocketStuff.Client;
 import SocketStuff.Threads.*;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class ChatPage extends JPanel
 {
@@ -15,21 +19,42 @@ public class ChatPage extends JPanel
     private JButton back;
     private JTextField urChats;
     private JButton sendFile;
-    private JButton profilePic;
+    private JLabel profilePic;
     private JLabel name;
     private JLabel status;
+    private BufferedImage img;
+    private Image dimg;
+    private ImageIcon imageIcon;
 
-    public ChatPage(String userName)
+    public ChatPage(String userName,boolean calledByMainPage)
     {
+//        try
+//        {
+//            myPicture = ImageIO.read(new File("./src/DataBase/ProfilePicture/default.png"));
+//        }
+//        catch (IOException error)
+//        {
+//            System.err.println(error);
+//        }
         //construct components
+        try
+        {
+            img = ImageIO.read(new File("./src/DataBase/ProfilePicture/##default.png"));
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        dimg = img.getScaledInstance(55, 55, Image.SCALE_SMOOTH);
+        imageIcon = new ImageIcon(dimg);
+
         send = new JButton ("Send");
         chats = new JTextArea (5, 5);
         back = new JButton ("Back");
         urChats = new JTextField (5);
         sendFile = new JButton ("Send File");
-        profilePic = new JButton ("");
         name = new JLabel (userName);
         status = new JLabel ("NotSetYet");
+        profilePic = new JLabel(imageIcon);
 
         //adjust size and set layout
         setPreferredSize (new Dimension(500, 502));
@@ -41,9 +66,9 @@ public class ChatPage extends JPanel
         add (back);
         add (urChats);
         add (sendFile);
-        add (profilePic);
         add (name);
         add (status);
+        add(profilePic);
 
         //set component bounds (only needed by Absolute Positioning)
         send.setBounds (355, 475, 145, 25);
@@ -74,7 +99,10 @@ public class ChatPage extends JPanel
                 inputGUI.end();
                 OutputStream.send("##GetStatus-"+userName);
                 setVisible(false);
-                MainPage.Hide();
+                if (calledByMainPage)
+                    MainPage.Hide();
+                else
+                    NewChat.Hide();
                 frame = new JFrame ("Zapenger");
                 frame.addWindowListener(new WindowAdapter()
                 {
