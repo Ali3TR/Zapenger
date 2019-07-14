@@ -119,8 +119,8 @@ public class ClientHandler extends Thread
         switch (temp[0])
         {
             case "##Info":
-                int isAuthorized = AccountDB.isAuthorized(temp[1],temp[2]);
                 this.userName=temp[1];
+                int isAuthorized = AccountDB.isAuthorized(temp[1],temp[2]);
                 ArrayList<ClientHandler> clientList0 = new ArrayList<>();
                 clientList0.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 switch (isAuthorized)
