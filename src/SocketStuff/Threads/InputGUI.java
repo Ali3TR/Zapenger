@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class InputGUI extends Thread
 {
-    private static volatile boolean flag=true;
+    private static volatile boolean flag0=true;
     private String receiver;
     private JTextArea chats;
     private JLabel status;
@@ -23,12 +23,10 @@ public class InputGUI extends Thread
     {
         String receivedMessage;
         System.out.println("thread ran");
-        OutputStream.send("##Status-"+receiver);
         receivedMessage = inputStream.read();
         status.setText(receivedMessage.split("##")[1]);
-        outputStream.send("##LoadChats-"+ Client.getUserName()+"-"+receiver);
         System.out.println("message sent");
-        while (flag)
+        while (flag0)
         {
             receivedMessage = inputStream.read();
             if (receivedMessage.startsWith("##"))
@@ -48,10 +46,10 @@ public class InputGUI extends Thread
     }
     public static void end()
     {
-        flag=false;
+        flag0=false;
     }
     public static void con()
     {
-        flag=true;
+        flag0=true;
     }
 }

@@ -1,10 +1,7 @@
 package GUI;
 
 import SocketStuff.Client;
-import SocketStuff.Threads.InputGUI;
-import SocketStuff.Threads.InputStream;
-import SocketStuff.Threads.OutputStream;
-import SocketStuff.Threads.Status;
+import SocketStuff.Threads.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -68,7 +65,8 @@ public class MainPage extends JPanel
                     {
                         ChatPage.Hide();
                         InputGUI.con();
-                        Status.con();
+                        GetStatus.con();
+                        OutputGUI.con();
                     }
 
                     else
@@ -81,7 +79,8 @@ public class MainPage extends JPanel
                         {
                             OutputStream.send("##Close");
                             InputGUI.end();
-                            Status.end();
+                            GetStatus.end();
+                            OutputGUI.end();
                             OutputStream.close();
                             InputStream.close();
                             Client.close();

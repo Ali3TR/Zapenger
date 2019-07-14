@@ -2,14 +2,9 @@ package SocketStuff.Threads;
 
 import java.util.concurrent.TimeUnit;
 
-public class Status extends Thread
+public class GetStatus extends Thread
 {
     private static volatile boolean flag=true;
-    private String username;
-    public Status(String username)
-    {
-        this.username=username;
-    }
     @Override
     public void run()
     {
@@ -24,7 +19,7 @@ public class Status extends Thread
                 System.err.println(error);
             }
             if (flag)
-                OutputStream.send("##Status-"+username);
+                OutputGUI.sendRequest();
         }
     }
     public static void end()

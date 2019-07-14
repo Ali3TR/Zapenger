@@ -1,17 +1,11 @@
 package GUI;
 
 import SocketStuff.Client;
-import SocketStuff.Threads.InputGUI;
-import SocketStuff.Threads.InputStream;
-import SocketStuff.Threads.OutputStream;
-import SocketStuff.Threads.Status;
+import SocketStuff.Threads.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 
 public class ChatPage extends JPanel
 {
@@ -36,8 +30,6 @@ public class ChatPage extends JPanel
         profilePic = new JButton ("");
         name = new JLabel (userName);
         status = new JLabel ("NotSetYet");
-
-
 
         //adjust size and set layout
         setPreferredSize (new Dimension(500, 502));
@@ -66,9 +58,13 @@ public class ChatPage extends JPanel
         chats.setEditable(false);
 
         InputGUI inputGUI = new InputGUI(chats,userName,status);
+        OutputGUI outputGUI = new OutputGUI(userName);
+        GetStatus status1 = new GetStatus();
         inputGUI.start();
-        Status status1 = new Status(userName);
+        outputGUI.start();
         status1.start();
+
+
         back.addActionListener(new ActionListener()
         {
             @Override
@@ -76,7 +72,7 @@ public class ChatPage extends JPanel
             {
                 status1.end();
                 inputGUI.end();
-                OutputStream.send("##Status-"+userName);
+                OutputStream.send("##GetStatus-"+userName);
                 setVisible(false);
                 MainPage.Hide();
                 frame = new JFrame ("Zapenger");
@@ -111,6 +107,21 @@ public class ChatPage extends JPanel
                 chats.append("\n");
                 chats.setEditable(false);
                 urChats.setText("");
+            }
+        });
+
+        urChats.addFocusListener(new FocusListener()
+        {
+            @Override
+            public void focusGained(FocusEvent e)
+            {
+                OutputGUI.sendTyping();
+            }
+
+            @Override
+            public void focusLost(FocusEvent e)
+            {
+                OutputGUI.sendOnline();
             }
         });
     }

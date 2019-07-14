@@ -143,10 +143,10 @@ public class ClientHandler extends Thread
             case "##SetStatus":
                 AccountDB.setStatus(userName,temp[1]);
                 break;
-            case "##Status":
+            case "##GetStatus":
                 ArrayList<ClientHandler> clientList2 = new ArrayList<>();
                 clientList2.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
-                send("##"+AccountDB.getStatus(temp[1]),clientList2);
+                send("##"+AccountDB.getStatus(temp[1].split("##")[0]),clientList2);
                 break;
             case "##AddToChat":
                 Chats.addToChat(temp[3],temp[2],temp[1]);
