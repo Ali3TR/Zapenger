@@ -22,10 +22,6 @@ public class InputGUI extends Thread
     public void run()
     {
         String receivedMessage;
-        System.out.println("thread ran");
-        receivedMessage = inputStream.read();
-        status.setText(receivedMessage.split("##")[1]);
-        System.out.println("message sent");
         while (flag0)
         {
             receivedMessage = inputStream.read();

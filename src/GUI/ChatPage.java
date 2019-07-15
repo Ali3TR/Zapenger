@@ -97,7 +97,7 @@ public class ChatPage extends JPanel
             {
                 status1.end();
                 inputGUI.end();
-                OutputStream.send("##GetStatus-"+userName);
+                OutputStream.send("##ChatWith-"+Client.getUserName());
                 setVisible(false);
                 if (calledByMainPage)
                     MainPage.Hide();
@@ -120,6 +120,7 @@ public class ChatPage extends JPanel
                 frame.getContentPane().add (new MainPage(true));
                 frame.pack();
                 frame.setVisible (true);
+                OutputGUI.sendOnline();
             }
         });
 
@@ -128,6 +129,7 @@ public class ChatPage extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
+                OutputGUI.sendOnline();
                 OutputStream.send("##AddToChat-"+userName+"-"+ Client.getUserName()+"-"
                         +Client.getUserName()+"##"+urChats.getText());
                 chats.setEditable(true);

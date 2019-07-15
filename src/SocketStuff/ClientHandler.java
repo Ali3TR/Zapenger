@@ -40,6 +40,8 @@ public class ClientHandler extends Thread
                         }
                         else
                         {
+                            if (receiveMessage.length()==0)
+                                continue;
                             String[] temp = receiveMessage.split("##");
                             Chats.addToChat(userName+"##"+temp[1],userName,temp[0]);
                         }

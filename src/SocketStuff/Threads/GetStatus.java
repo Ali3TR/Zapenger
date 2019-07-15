@@ -10,6 +10,7 @@ public class GetStatus extends Thread
     {
         while (flag)
         {
+            OutputGUI.sendRequest();
             try
             {
                 TimeUnit.SECONDS.sleep(3);
@@ -18,8 +19,6 @@ public class GetStatus extends Thread
             {
                 System.err.println(error);
             }
-            if (flag)
-                OutputGUI.sendRequest();
         }
     }
     public static void end()
