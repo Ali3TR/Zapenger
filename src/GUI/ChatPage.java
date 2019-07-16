@@ -25,6 +25,7 @@ public class ChatPage extends JPanel
     private BufferedImage img;
     private Image dimg;
     private ImageIcon imageIcon;
+    private JScrollPane jScrollPane;
 
     public ChatPage(String userName,boolean calledByMainPage)
     {
@@ -55,6 +56,8 @@ public class ChatPage extends JPanel
         name = new JLabel (userName);
         status = new JLabel ("NotSetYet");
         profilePic = new JLabel(imageIcon);
+        jScrollPane = new JScrollPane(chats);
+
 
         //adjust size and set layout
         setPreferredSize (new Dimension(500, 502));
@@ -62,7 +65,7 @@ public class ChatPage extends JPanel
 
         //add components
         add (send);
-        add (chats);
+        add (jScrollPane);
         add (back);
         add (urChats);
         add (sendFile);
@@ -72,7 +75,7 @@ public class ChatPage extends JPanel
 
         //set component bounds (only needed by Absolute Positioning)
         send.setBounds (355, 475, 145, 25);
-        chats.setBounds (0, 55, 500, 385);
+        jScrollPane.setBounds (0, 55, 500, 385);
         back.setBounds (0, 0, 100, 25);
         urChats.setBounds (0, 445, 500, 25);
         sendFile.setBounds (0, 475, 100, 25);
@@ -80,7 +83,10 @@ public class ChatPage extends JPanel
         name.setBounds (210, 0, 165, 25);
         status.setBounds (210, 30, 165, 25);
 
+
         chats.setEditable(false);
+
+        jScrollPane.getVerticalScrollBar().setValue(jScrollPane.getVerticalScrollBar().getMaximum());
 
         InputGUI inputGUI = new InputGUI(chats,userName,status);
         OutputGUI outputGUI = new OutputGUI(userName);
@@ -129,6 +135,7 @@ public class ChatPage extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
+                jScrollPane.getVerticalScrollBar().setValue(jScrollPane.getVerticalScrollBar().getMaximum());
                 OutputGUI.sendOnline();
                 OutputStream.send("##AddToChat-"+userName+"-"+ Client.getUserName()+"-"
                         +Client.getUserName()+"##"+urChats.getText());
