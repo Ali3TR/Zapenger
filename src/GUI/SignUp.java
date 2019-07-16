@@ -103,7 +103,7 @@ public class SignUp extends JPanel
             public void actionPerformed(ActionEvent e)
             {
 
-                strFirstName = firstName.getText();
+                strFirstName = firstNameField.getText();
                 strLastName = lastNameField.getText();
                 strEmail = emailField.getText();
                 strUserName = userNameField.getText();

@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f7d71499-b334-4220-8a7c-e5e3f9f0bb68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##Ali.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##Ali.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##AliM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##AliM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/ChatPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/ChatPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,23 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="25" column="62" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="62" />
+            <state relative-caret-position="1245">
+              <caret line="92" column="44" selection-start-line="73" selection-start-column="20" selection-end-line="92" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5204#5205#0" expanded="true" />
@@ -68,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="525">
               <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,9 +78,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="570">
               <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,12 +116,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="315">
               <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1316#1317#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
+                <element signature="e#1369#1370#0" expanded="true" />
                 <element signature="e#1395#1396#0" expanded="true" />
               </folding>
             </state>
@@ -117,7 +130,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/NewChat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="885">
               <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -129,23 +142,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/LogIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5766#5767#0" expanded="true" />
-                <element signature="e#5805#5806#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
+            <state relative-caret-position="195">
               <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -157,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -227,11 +226,9 @@
         <option value="$PROJECT_DIR$/src/SocketStuff/Threads/Status.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Threads/ShareStatus.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java" />
-        <option value="$PROJECT_DIR$/src/GUI/SignUp.java" />
         <option value="$PROJECT_DIR$/src/GUI/StartGUI.java" />
         <option value="$PROJECT_DIR$/src/GUI/WelcomePage.java" />
         <option value="$PROJECT_DIR$/src/DataBase/AccountDB.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
         <option value="$PROJECT_DIR$/src/DataBase/Chats.java" />
         <option value="$PROJECT_DIR$/src/GUI/Setting.java" />
         <option value="$PROJECT_DIR$/src/GUI/LogIn.java" />
@@ -239,9 +236,11 @@
         <option value="$PROJECT_DIR$/src/GUI/NewChat.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainPage.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" />
-        <option value="$PROJECT_DIR$/src/GUI/ChatPage.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ChatPage.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SignUp.java" />
       </list>
     </option>
   </component>
@@ -259,8 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,19 +269,6 @@
               <item name="Zapenger" type="b2602c69:ProjectViewProjectNode" />
               <item name="Zapenger" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Zapenger" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Zapenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataBase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Zapenger" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Zapenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataBase" type="462c0819:PsiDirectoryNode" />
-              <item name="Chats" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Zapenger" type="b2602c69:ProjectViewProjectNode" />
@@ -309,6 +293,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +426,8 @@
       <workItem from="1563044868126" duration="11369000" />
       <workItem from="1563058177311" duration="5454000" />
       <workItem from="1563093154068" duration="19465000" />
-      <workItem from="1563204969843" duration="8247000" />
+      <workItem from="1563204969843" duration="10251000" />
+      <workItem from="1563269119912" duration="527000" />
     </task>
     <task id="LOCAL-00001" summary="added Storing chats in text file!">
       <created>1561634027372</created>
@@ -498,17 +485,23 @@
       <option name="project" value="LOCAL" />
       <updated>1563129498032</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final edit 0.9.9.4&#10;*Fixed Crashing when pressing back button&#10;This version is almost final&#10;it only lags sending file and setting profile picture!">
+      <created>1563213742848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563213742849</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236973000" />
+    <option name="totallyTimeSpent" value="239504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.2030303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -518,7 +511,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49924242" visible="true" weight="0.20846905" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924242" weight="0.2068404" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -552,7 +545,8 @@
     <MESSAGE value="final edit 0.9.9.2&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline or typing)&#10;*Starting now closing window will close socket and all other related stuff" />
     <MESSAGE value="final edit 0.9.9.2&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline or typing)&#10;*Starting now closing window will close socket and all other related stuff&#10;*Fixed an small issue!" />
     <MESSAGE value="final edit 0.9.9.3&#10;*Added Setting&#10;*Added Search user&#10;*Set default profile&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
-    <option name="LAST_COMMIT_MESSAGE" value="final edit 0.9.9.3&#10;*Added Setting&#10;*Added Search user&#10;*Set default profile&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
+    <MESSAGE value="final edit 0.9.9.4&#10;*Fixed Crashing when pressing back button&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
+    <option name="LAST_COMMIT_MESSAGE" value="final edit 0.9.9.4&#10;*Fixed Crashing when pressing back button&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/51a42ce0-08f0-4440-af06-b0012cfa2cbc/console.sql">
@@ -671,16 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataBase/Chats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -707,16 +691,6 @@
             <element signature="e#1314#1315#0" expanded="true" />
             <element signature="e#1349#1350#0" expanded="true" />
             <element signature="e#1375#1376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="117" column="17" selection-start-line="110" selection-start-column="16" selection-end-line="117" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -763,42 +737,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="270">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/NewChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2869#2870#0" expanded="true" />
-            <element signature="e#2908#2909#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="25" column="62" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="62" />
+        <state relative-caret-position="1245">
+          <caret line="92" column="44" selection-start-line="73" selection-start-column="20" selection-end-line="92" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5204#5205#0" expanded="true" />
@@ -807,19 +759,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="525">
           <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -835,23 +777,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="315">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
             <element signature="e#1395#1396#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/NewChat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+        <state relative-caret-position="885">
+          <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2869#2870#0" expanded="true" />
+            <element signature="e#2908#2909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
