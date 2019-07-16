@@ -25,9 +25,9 @@ public class InputGUI extends Thread
         while (flag0)
         {
             receivedMessage = inputStream.read();
-            if (receivedMessage.startsWith("##"))
+            if (receivedMessage.startsWith("##Status-"+receiver))
             {
-                status.setText(receivedMessage.split("##")[1]);
+                status.setText(receivedMessage.split("-")[2]);
                 continue;
             }
             chats.setEditable(true);

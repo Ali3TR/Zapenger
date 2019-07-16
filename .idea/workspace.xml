@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d71499-b334-4220-8a7c-e5e3f9f0bb68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/GUI/ChatPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zapenger/SocketStuff/DBTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/DBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBase/Chats/Sajad##Hamed.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,22 +39,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="92" column="44" selection-start-line="73" selection-start-column="20" selection-end-line="92" selection-end-column="44" />
+            <state relative-caret-position="256">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="37" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5204#5205#0" expanded="true" />
-                <element signature="e#5243#5244#0" expanded="true" />
+                <element signature="e#5493#5494#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="345">
+              <caret line="166" column="31" lean-forward="true" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#hasChat#0;class#ClientHandler#0" />
@@ -78,34 +72,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java">
+        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+            <state relative-caret-position="157">
+              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java">
+        <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state relative-caret-position="240">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,12 +101,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="180">
+              <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1369#1370#0" expanded="true" />
                 <element signature="e#1395#1396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="99" column="70" selection-start-line="99" selection-start-column="70" selection-end-line="99" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,13 +231,13 @@
         <option value="$PROJECT_DIR$/src/GUI/LogIn.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java" />
         <option value="$PROJECT_DIR$/src/GUI/NewChat.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SignUp.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ChatPage.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainPage.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" />
         <option value="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java" />
-        <option value="$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
-        <option value="$PROJECT_DIR$/src/GUI/ChatPage.java" />
-        <option value="$PROJECT_DIR$/src/GUI/SignUp.java" />
       </list>
     </option>
   </component>
@@ -258,6 +255,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,8 +292,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,6 +425,7 @@
       <workItem from="1563093154068" duration="19465000" />
       <workItem from="1563204969843" duration="10251000" />
       <workItem from="1563269119912" duration="527000" />
+      <workItem from="1563270134097" duration="3566000" />
     </task>
     <task id="LOCAL-00001" summary="added Storing chats in text file!">
       <created>1561634027372</created>
@@ -496,12 +494,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239504000" />
+    <option name="totallyTimeSpent" value="243070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.2030303" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.2060606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -511,7 +510,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924242" weight="0.2068404" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49924242" visible="true" weight="0.2068404" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -682,19 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-          <folding>
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/StartGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -737,43 +723,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="135">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="92" column="44" selection-start-line="73" selection-start-column="20" selection-end-line="92" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5204#5205#0" expanded="true" />
-            <element signature="e#5243#5244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#hasChat#0;class#ClientHandler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -783,18 +739,6 @@
           <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -831,22 +775,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+        <state relative-caret-position="240">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+        <state relative-caret-position="180">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding>
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5493#5494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="99" column="70" selection-start-line="99" selection-start-column="70" selection-end-line="99" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="166" column="31" lean-forward="true" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#hasChat#0;class#ClientHandler#0" />
           </folding>
         </state>
       </provider>

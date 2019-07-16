@@ -152,7 +152,7 @@ public class ClientHandler extends Thread
             case "##GetStatus":
                 ArrayList<ClientHandler> clientList2 = new ArrayList<>();
                 clientList2.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
-                send("##"+AccountDB.getStatus(temp[1].split("##")[0]),clientList2);
+                send("##Status-"+temp[1]+"-"+AccountDB.getStatus(temp[1].split("##")[0]),clientList2);
                 break;
             case "##AddToChat":
                 Chats.addToChat(temp[3],temp[2],temp[1]);
@@ -182,7 +182,7 @@ public class ClientHandler extends Thread
                     list.ensureCapacity(20*k+2);
                     list.append(listOfChats.get(k)+"##");
                 }
-                send(list.toString(),clientList3);
+                send("##ChatWith-"+list.toString(),clientList3);
                 break;
             case "##Username":
                 this.userName=temp[1];

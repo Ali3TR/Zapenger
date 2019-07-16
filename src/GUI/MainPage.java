@@ -24,7 +24,19 @@ public class MainPage extends JPanel
         newChat = new JButton ("Start a new chat");
 
         OutputStream.send("##ChatWith-"+Client.getUserName());
-        String receiveMessage = InputStream.read();
+        String receiveMessage;
+        while (true)
+        {
+             receiveMessage = InputStream.read();
+             if (receiveMessage.startsWith("##ChatWith-"))
+             {
+                 receiveMessage = receiveMessage.split("-")[1];
+                 break;
+             }
+
+
+        }
+
 //        if (receiveMessage.split("##")[0].equals("-"))
 //            receiveMessage = InputStream.read();
         ArrayList<String> listOfChats = new ArrayList<>();
