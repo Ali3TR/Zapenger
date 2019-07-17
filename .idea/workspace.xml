@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7d71499-b334-4220-8a7c-e5e3f9f0bb68" name="Default Changelist" comment="final edit 0.9.9.6&#10;*Fixed setting username as user's status.&#10;This version is almost final" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Zapenger" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="118" column="52" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#send#0;class#ClientHandler#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataBase/AccountDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Setting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="141" column="37" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>regBtn</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="javaFX" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/GUI/Welcome.java" />
+        <option value="$PROJECT_DIR$/src/Main3.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Stream/Output.java" />
+        <option value="$PROJECT_DIR$/src/Stream/Input.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
+        <option value="$PROJECT_DIR$/src/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/RMI_Interface.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/PassCheck.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/chatList.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Main3.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/ChatList.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/File.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/User.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/UserList.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/test.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Wait.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Stream/Input.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Main2.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Stream/Output.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/SignUp.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Main.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SubChatPage.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SocketFrame.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/Status.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/ShareStatus.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Main.java" />
+        <option value="$PROJECT_DIR$/src/Server/DataBase/AccountDB.java" />
+        <option value="$PROJECT_DIR$/src/Client/DataBase/AccountDB.java" />
+        <option value="$PROJECT_DIR$/src/Server/MegaServer.java" />
+        <option value="$PROJECT_DIR$/src/Server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/NewChat.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/MegaServer.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/Client.java" />
+        <option value="$PROJECT_DIR$/src/GUI/WelcomePage.java" />
+        <option value="$PROJECT_DIR$/src/GUI/StartGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SignUp.java" />
+        <option value="$PROJECT_DIR$/src/GUI/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/GUI/LogIn.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/Chats.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/Account.java" />
+        <option value="$PROJECT_DIR$/src/SocketStuff/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ChatPage.java" />
+        <option value="$PROJECT_DIR$/src/DataBase/AccountDB.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Setting.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="450" />
+    <option name="y" value="100" />
+    <option name="width" value="675" />
+    <option name="height" value="555" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DataBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketStuff" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketStuff" type="462c0819:PsiDirectoryNode" />
+              <item name="Threads" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/GUI" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/GUI" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MegaServer (1)">
+    <configuration name="DBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketStuff.DBTest" />
+      <module name="Zapenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketStuff.Main" />
+      <module name="Zapenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SocketStuff.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client.Main" />
+      <module name="Zapenger" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MegaServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketStuff.MegaServer" />
+      <module name="Zapenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SocketStuff.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MegaServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server.MegaServer" />
+      <module name="Zapenger" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MegaServer (1)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MegaServer" />
+        <item itemvalue="Application.DBTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7d71499-b334-4220-8a7c-e5e3f9f0bb68" name="Default Changelist" comment="" />
+      <created>1559609266061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559609266061</updated>
+      <workItem from="1559609273532" duration="10911000" />
+      <workItem from="1559830381238" duration="3062000" />
+      <workItem from="1559838973933" duration="12794000" />
+      <workItem from="1560013161403" duration="22200000" />
+      <workItem from="1560322384658" duration="11405000" />
+      <workItem from="1560409095358" duration="2946000" />
+      <workItem from="1560492164971" duration="5438000" />
+      <workItem from="1560517026259" duration="923000" />
+      <workItem from="1561485362351" duration="15203000" />
+      <workItem from="1561555457768" duration="12305000" />
+      <workItem from="1561623066510" duration="7795000" />
+      <workItem from="1561999925854" duration="1630000" />
+      <workItem from="1562048114731" duration="798000" />
+      <workItem from="1562054695009" duration="10895000" />
+      <workItem from="1562131145053" duration="19993000" />
+      <workItem from="1562615770813" duration="10482000" />
+      <workItem from="1562665231508" duration="16076000" />
+      <workItem from="1562764949187" duration="891000" />
+      <workItem from="1562793902159" duration="1377000" />
+      <workItem from="1562827969298" duration="1559000" />
+      <workItem from="1562834370492" duration="5636000" />
+      <workItem from="1562863064720" duration="4338000" />
+      <workItem from="1563022185671" duration="171000" />
+      <workItem from="1563022756340" duration="3086000" />
+      <workItem from="1563044868126" duration="11369000" />
+      <workItem from="1563058177311" duration="5454000" />
+      <workItem from="1563093154068" duration="19465000" />
+      <workItem from="1563204969843" duration="10251000" />
+      <workItem from="1563269119912" duration="527000" />
+      <workItem from="1563270134097" duration="5081000" />
+      <workItem from="1563345655551" duration="2562000" />
+      <workItem from="1563354707056" duration="6818000" />
+      <workItem from="1563362903019" duration="587000" />
+      <workItem from="1563366546768" duration="1274000" />
+      <workItem from="1563370037451" duration="96000" />
+      <workItem from="1563374062815" duration="4881000" />
+      <workItem from="1563394817544" duration="1462000" />
+      <workItem from="1563397188044" duration="2283000" />
+      <workItem from="1563399687302" duration="443000" />
+      <workItem from="1563400204163" duration="1559000" />
+      <workItem from="1563401815963" duration="1426000" />
+      <workItem from="1563403408630" duration="822000" />
+    </task>
+    <task id="LOCAL-00001" summary="added Storing chats in text file!">
+      <created>1561634027372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561634027372</updated>
+    </task>
+    <task id="LOCAL-00002" summary="final edit 0.9">
+      <created>1562741736386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562741736386</updated>
+    </task>
+    <task id="LOCAL-00003" summary="final edit 0.9.2&#10;*Fixed sign up button">
+      <created>1562837234080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562837234080</updated>
+    </task>
+    <task id="LOCAL-00004" summary="final edit 0.9.2&#10;*Fixed a couple of minor bugs!">
+      <created>1562868760378</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562868760378</updated>
+    </task>
+    <task id="LOCAL-00005" summary="final edit 0.9.9.1&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline)">
+      <created>1563057520432</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563057520433</updated>
+    </task>
+    <task id="LOCAL-00006" summary="final edit 0.9.9.2&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline or typing)&#10;*Starting now closing window will close socket and all other related stuff">
+      <created>1563063249385</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563063249385</updated>
+    </task>
+    <task id="LOCAL-00007" summary="final edit 0.9.9.2&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline or typing)&#10;*Starting now closing window will close socket and all other related stuff&#10;*Fixed an small issue!">
+      <created>1563063636128</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563063636128</updated>
+    </task>
+    <task id="LOCAL-00008" summary="final edit 0.9.9.3&#10;*Added Setting&#10;*Added Search user&#10;*Set default profile&#10;This version is almost final&#10;it only lags sending file and setting profile picture!">
+      <created>1563129498032</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563129498032</updated>
+    </task>
+    <task id="LOCAL-00009" summary="final edit 0.9.9.4&#10;*Fixed Crashing when pressing back button&#10;This version is almost final&#10;it only lags sending file and setting profile picture!">
+      <created>1563213742848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563213742849</updated>
+    </task>
+    <task id="LOCAL-00010" summary="final edit 0.9.9.6&#10;*Fixed setting username as user's status.&#10;This version is almost final&#10;it only lags sending file and setting profile picture!">
+      <created>1563282292912</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563282292912</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="268798000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.15704697" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50406504" side_tool="true" weight="0.2" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32899022" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924242" weight="0.24645892" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39739415" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007576" side_tool="true" weight="0.27850163" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32899022" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="1" weight="0.3295302" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="added Storing chats in text file!" />
+    <MESSAGE value="final edit 0.9" />
+    <MESSAGE value="final edit 0.9.2&#10;*Fixed sign up button" />
+    <MESSAGE value="final edit 0.9.2&#10;*Fixed a couple of minor bugs!" />
+    <MESSAGE value="final edit 0.9.9.1&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline)" />
+    <MESSAGE value="final edit 0.9.9.2&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline or typing)&#10;*Starting now closing window will close socket and all other related stuff" />
+    <MESSAGE value="final edit 0.9.9.2&#10;*Fixed not being able to move back to mainpage while being on chatpage&#10;*Added Status to app(Online or Offline or typing)&#10;*Starting now closing window will close socket and all other related stuff&#10;*Fixed an small issue!" />
+    <MESSAGE value="final edit 0.9.9.3&#10;*Added Setting&#10;*Added Search user&#10;*Set default profile&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
+    <MESSAGE value="final edit 0.9.9.4&#10;*Fixed Crashing when pressing back button&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
+    <MESSAGE value="final edit 0.9.9.6&#10;*Fixed setting username as user's status.&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
+    <option name="LAST_COMMIT_MESSAGE" value="final edit 0.9.9.6&#10;*Fixed setting username as user's status.&#10;This version is almost final&#10;it only lags sending file and setting profile picture!" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5ff6ab92-2b4b-4dda-84e4-bd13d6a6c544/console.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5c96bcc3-8032-4f7f-9f6f-8af2a424f9c0/console.sql" />
+    <entry file="file://$PROJECT_DIR$/src/DataBase/ChatList.java" />
+    <entry file="das://4003b901-01ff-4065-b176-903f34e98d7b/role/postgres" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4003b901-01ff-4065-b176-903f34e98d7b/console.sql" />
+    <entry file="das://4003b901-01ff-4065-b176-903f34e98d7b/database/postgres/schema/pg_catalog/table/pg_aggregate" />
+    <entry file="das://4003b901-01ff-4065-b176-903f34e98d7b/database/postgres/extension/plpgsql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/590fa1e4-86f2-461d-9e3e-0a0e56b628d7/console.sql" />
+    <entry file="file://$PROJECT_DIR$/src/DataBase/User.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ef42e56c-24d1-480b-8667-a4cb38825872/console.sql" />
+    <entry file="das://ef42e56c-24d1-480b-8667-a4cb38825872/role/postgres" />
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/DataBase/UserList.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ed109de7-9017-4ec3-b45a-68e7016495ee/console.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0bf9cc17-1fea-4e95-ab6c-0857ce48fd51/console.sql" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/SubChatPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main3.java" />
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main2.java" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/Wait.java" />
+    <entry file="jar:///usr/local/java/jdk-12/lib/src.zip!/java.base/java/security/ProtectionDomain.java" />
+    <entry file="jar:///usr/local/java/jdk-12/lib/src.zip!/java.base/java/security/AccessController.java" />
+    <entry file="jar:///usr/local/java/jdk-12/lib/src.zip!/java.desktop/java/awt/EventQueue.java" />
+    <entry file="jar:///usr/local/java/jdk-12/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/DataBase/Chats/Sajad##Hamed.txt" />
+    <entry file="file://$PROJECT_DIR$/src/DataBase/Chats/Sajad##Ali.txt" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/SocketFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/DBTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Server.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d3ef4ff-e3b5-4a1e-9767-a7c38a4c5939/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/GetStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#89#90#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/MegaServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getClientNumber#0;class#MegaServer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/ServerInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="method#Client#0;class#Client#0" />
+            <element signature="method#isAuthorized#0;class#Client#0" />
+            <element signature="method#setInfo#0;class#Client#0" />
+            <element signature="method#close#0;class#Client#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#OutputStream#0;class#OutputStream#0" />
+            <element signature="method#send#0;class#OutputStream#0" />
+            <element signature="method#close#0;class#OutputStream#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/OutputGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/Threads/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#InputStream#0;class#InputStream#0" />
+            <element signature="method#read#0;class#InputStream#0" />
+            <element signature="method#close#0;class#InputStream#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/WelcomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataBase/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataBase/Chats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loadChat#0;class#Chats#0" />
+            <element signature="method#addToChat#0;class#Chats#0" />
+            <element signature="method#startChat#0;class#Chats#0" />
+            <element signature="method#hasChatWith#0;class#Chats#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/StartGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/NewChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/LogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocketStuff/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="118" column="52" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#send#0;class#ClientHandler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataBase/AccountDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="141" column="37" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ChatPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Zapenger</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>postgresql-42.2.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
