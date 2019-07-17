@@ -64,8 +64,10 @@ public class AccountDB
         String temp;
         if (status.contains("Online"))
             temp="Online";
-        else
+        else if (status.contains("Offline"))
             temp="Offline";
+        else
+            temp = "Typing##"+status.split("##")[1];
         try
         {
             preparedStatement = connection.prepareStatement("update account set status = ? where username = ?");
@@ -144,64 +146,6 @@ public class AccountDB
         {
             System.err.println(err);
         }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public void getAccounts() throws Exception
-    {
-        preparedStatement = connection.prepareStatement("select * from account");
-        ResultSet resultSet = preparedStatement.executeQuery();
-        while (resultSet.next())
-        {
-            System.out.println(resultSet.getString("username"));
-        }
-    }
-
-    public String getAccount(String username) throws Exception
-    {
-        preparedStatement = connection.prepareStatement("select * from account where username = ?");
-        preparedStatement.setString(1,username);
-        ResultSet resultSet = preparedStatement.executeQuery();
-        resultSet.next();
-        return resultSet.getString("username");
-    }
-
-    public void changePass(Account account, String newPass) throws Exception
-    {
-        preparedStatement = connection.prepareStatement("update account set pass = ? where username = ?");
-        preparedStatement.setString(1, newPass);
-        preparedStatement.setString(2, account.getUsername());
-        preparedStatement.executeUpdate();
-    }
-
-    public void deletePerson(String username) throws Exception
-    {
-        preparedStatement = connection.prepareStatement("delete from account where username = ?");
-        preparedStatement.setString(1, username);
-        preparedStatement.executeUpdate();
-    }
-
-    public void close() throws Exception
-    {
-        preparedStatement.close();
-        connection.close();
     }
     public static int isAuthorized(String username,String pass)
     {

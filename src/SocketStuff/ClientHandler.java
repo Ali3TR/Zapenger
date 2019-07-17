@@ -109,7 +109,7 @@ public class ClientHandler extends Thread
                 AccountDB.setStatus(userName,temp[1]);
                 break;
             case "##GetStatus":
-                send("##Status-"+temp[1]+"-"+AccountDB.getStatus(temp[1].split("##")[0]),this);
+                send("##Status-"+temp[1].split("##")[0]+"-"+AccountDB.getStatus(temp[1].split("##")[0]),this);
                 break;
             case "##AddToChat":
                 Chats.addToChat(temp[3],temp[2],temp[1]);

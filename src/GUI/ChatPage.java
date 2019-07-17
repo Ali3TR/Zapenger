@@ -96,6 +96,7 @@ public class ChatPage extends JPanel
                 OutputStream.send("##ChatWith-"+Client.getUserName());
                 setVisible(false);
                 StartGUI.frame.setVisible(false);
+                StartGUI.frame.setResizable(true);
                 StartGUI.frame.setTitle("Zapenger");
                 StartGUI.frame.getContentPane().removeAll();
                 StartGUI.frame.getContentPane().add (new MainPage(true));

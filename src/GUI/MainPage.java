@@ -128,12 +128,13 @@ public class MainPage extends JPanel
                         GetStatus.con();
                         OutputGUI.con();
                     }
-                    StartGUI.frame.setResizable(true);
                     StartGUI.frame.setVisible(false);
+                    StartGUI.frame.setResizable(true);
                     StartGUI.frame.setTitle("Zapenger");
                     StartGUI.frame.getContentPane().removeAll();
                     StartGUI.frame.getContentPane().add (new ChatPage(name));
                     StartGUI.frame.pack();
+                    StartGUI.frame.setResizable(false);
                     StartGUI.frame.setLocationRelativeTo(null);
                     StartGUI.frame.setVisible (true);
                 }
