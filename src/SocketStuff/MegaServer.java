@@ -20,7 +20,7 @@ public class MegaServer
         ServerSocket serverSocket = null;
         try
         {
-            serverSocket = new ServerSocket(37425);
+            serverSocket = new ServerSocket(37424);
         }
         catch (IOException error)
         {

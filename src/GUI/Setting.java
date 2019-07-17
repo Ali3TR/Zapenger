@@ -3,7 +3,6 @@ package GUI;
 import SocketStuff.Client;
 import SocketStuff.Threads.InputStream;
 import SocketStuff.Threads.OutputStream;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -47,8 +46,8 @@ public class Setting extends JPanel
 
     private JFileChooser fileChooser;
     private JButton back;
-    private static JFrame frame;
-    public Setting(boolean mainPageCalledByChatPage)
+
+    public Setting()
     {
         firstName = new JLabel ("FirstName:");
         lastName = new JLabel ("LastName:");
@@ -140,30 +139,17 @@ public class Setting extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 OutputStream.send("##SetStatus-"+Client.getUserName());
-                MainPage.Hide();
-                if (mainPageCalledByChatPage)
-                    ChatPage.Hide();
-                else
-                    LogIn.Hide();
+                setVisible(false);
+                MainPage.frame.setVisible(false);
+                MainPage.frame.dispose();
+                StartGUI.frame.setVisible(false);
                 Client.setInfo("temp","temp");
-                frame = new JFrame ("Zapenger");
-                frame.addWindowListener(new WindowAdapter()
-                {
-                    @Override
-                    public void windowClosing(WindowEvent e)
-                    {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
-                        e.getWindow().dispose();
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                });
-                frame.getContentPane().add (new WelcomePage(true));
-                frame.pack();
-                frame.setLocationRelativeTo(null);
-                frame.setVisible (true);
+                StartGUI.frame.setTitle("Zapenger");
+                StartGUI.frame.getContentPane().removeAll();
+                StartGUI.frame.getContentPane().add (new WelcomePage());
+                StartGUI.frame.pack();
+                StartGUI.frame.setLocationRelativeTo(null);
+                StartGUI.frame.setVisible (true);
             }
         });
 
@@ -198,9 +184,5 @@ public class Setting extends JPanel
         back.setBounds (2, 2, 70, 25);
         logOutBtn.setBounds (145, 380, 100, 25);
 
-    }
-    public static void Hide()
-    {
-        frame.setVisible(false);
     }
 }

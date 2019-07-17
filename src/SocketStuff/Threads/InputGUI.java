@@ -39,10 +39,15 @@ public class InputGUI extends Thread
             chats.setEditable(true);
             String[] temp = receivedMessage.split("##");
             if (temp[0].equals(receiver))
+            {
                 chats.append(receiver+" : "+temp[1]);
+                chats.append("\n");
+            }
             if (temp[0].equals(Client.getUserName()))
+            {
                 chats.append("You : "+temp[1]);
-            chats.append("\n");
+                chats.append("\n");
+            }
             chats.setEditable(false);
         }
     }

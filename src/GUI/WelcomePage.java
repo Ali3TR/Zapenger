@@ -1,9 +1,5 @@
 package GUI;
 
-import SocketStuff.Client;
-import SocketStuff.Threads.InputStream;
-import SocketStuff.Threads.OutputStream;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -14,9 +10,8 @@ public class WelcomePage extends JPanel
     private JButton signUp;
     private JLabel welcome;
     private JLabel welcome2;
-    private static JFrame frame;
 
-    public WelcomePage(boolean calledBySetting)
+    public WelcomePage()
     {
         //construct components
         logIn = new JButton("Log In");
@@ -47,28 +42,13 @@ public class WelcomePage extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 setVisible(false);
-                if (calledBySetting)
-                    Setting.Hide();
-                else
-                    StartGUI.Hide();
-                frame = new JFrame ("Log In");
-                frame.addWindowListener(new WindowAdapter()
-                {
-                    @Override
-                    public void windowClosing(WindowEvent e)
-                    {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
-                        e.getWindow().dispose();
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                });
-                frame.getContentPane().add (new LogIn(false));
-                frame.pack();
-                frame.setLocationRelativeTo(null);
-                frame.setVisible (true);
+                StartGUI.frame.setVisible(false);
+                StartGUI.frame.setTitle("Log In");
+                StartGUI.frame.getContentPane().removeAll();
+                StartGUI.frame.getContentPane().add (new LogIn());
+                StartGUI.frame.pack();
+                StartGUI.frame.setLocationRelativeTo(null);
+                StartGUI.frame.setVisible (true);
             }
         });
 
@@ -78,33 +58,14 @@ public class WelcomePage extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 setVisible(false);
-                if (calledBySetting)
-                    Setting.Hide();
-                else
-                    StartGUI.Hide();
-                frame = new JFrame ("Sign Up");
-                frame.addWindowListener(new WindowAdapter()
-                {
-                    @Override
-                    public void windowClosing(WindowEvent e)
-                    {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
-                        e.getWindow().dispose();
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                });
-                frame.getContentPane().add (new SignUp(false));
-                frame.pack();
-                frame.setLocationRelativeTo(null);
-                frame.setVisible (true);
+                StartGUI.frame.setVisible(false);
+                StartGUI.frame.setTitle("Sign Up");
+                StartGUI.frame.getContentPane().removeAll();
+                StartGUI.frame.getContentPane().add (new SignUp());
+                StartGUI.frame.pack();
+                StartGUI.frame.setLocationRelativeTo(null);
+                StartGUI.frame.setVisible (true);
             }
         });
-    }
-    public static void Hide()
-    {
-        frame.setVisible(false);
     }
 }

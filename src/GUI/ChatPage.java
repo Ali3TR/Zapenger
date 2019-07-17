@@ -2,7 +2,6 @@ package GUI;
 
 import SocketStuff.Client;
 import SocketStuff.Threads.*;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +12,6 @@ import java.io.IOException;
 
 public class ChatPage extends JPanel
 {
-    private static JFrame frame;
     private JButton send;
     private JTextArea chats;
     private JButton back;
@@ -27,16 +25,8 @@ public class ChatPage extends JPanel
     private ImageIcon imageIcon;
     private JScrollPane jScrollPane;
 
-    public ChatPage(String userName,boolean calledByMainPage)
+    public ChatPage(String userName)
     {
-//        try
-//        {
-//            myPicture = ImageIO.read(new File("./src/DataBase/ProfilePicture/default.png"));
-//        }
-//        catch (IOException error)
-//        {
-//            System.err.println(error);
-//        }
         //construct components
         try
         {
@@ -105,28 +95,14 @@ public class ChatPage extends JPanel
                 inputGUI.end();
                 OutputStream.send("##ChatWith-"+Client.getUserName());
                 setVisible(false);
-                if (calledByMainPage)
-                    MainPage.Hide();
-                else
-                    NewChat.Hide();
-                frame = new JFrame ("Zapenger");
-                frame.addWindowListener(new WindowAdapter()
-                {
-                    @Override
-                    public void windowClosing(WindowEvent e)
-                    {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
-                        e.getWindow().dispose();
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                });
-                frame.getContentPane().add (new MainPage(true));
-                frame.pack();
-                frame.setLocationRelativeTo(null);
-                frame.setVisible (true);
+                StartGUI.frame.setVisible(false);
+                StartGUI.frame.setTitle("Zapenger");
+                StartGUI.frame.getContentPane().removeAll();
+                StartGUI.frame.getContentPane().add (new MainPage(true));
+                StartGUI.frame.pack();
+                StartGUI.frame.setResizable(false);
+                StartGUI.frame.setLocationRelativeTo(null);
+                StartGUI.frame.setVisible (true);
                 OutputGUI.sendOnline();
             }
         });
@@ -167,9 +143,5 @@ public class ChatPage extends JPanel
                 OutputGUI.sendOnline();
             }
         });
-    }
-    public static void Hide()
-    {
-        frame.setVisible(false);
     }
 }

@@ -1,10 +1,6 @@
-//tasks needs to be done:
-//copy selected profile pic to "./src/DataBase/ProfilePicture/"
-//add default profile picture to project
 package GUI;
 
 import SocketStuff.Client;
-import SocketStuff.Threads.InputStream;
 import SocketStuff.Threads.OutputStream;
 import java.awt.*;
 import java.awt.event.*;
@@ -14,7 +10,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import javax.swing.*;
-
 
 public class SignUp extends JPanel
 {
@@ -50,10 +45,8 @@ public class SignUp extends JPanel
     private JLabel message;
 
     private JFileChooser fileChooser;
-    private static JFrame frame;
 
-
-    public SignUp(boolean calledByLogin)
+    public SignUp()
     {
         //construct components
         firstName = new JLabel ("FirstName:");
@@ -154,28 +147,13 @@ public class SignUp extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 setVisible(false);
-                if (calledByLogin)
-                    LogIn.Hide();
-                else
-                    WelcomePage.Hide();
-                frame = new JFrame ("Log In");
-                frame.addWindowListener(new WindowAdapter()
-                {
-                    @Override
-                    public void windowClosing(WindowEvent e)
-                    {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
-                        e.getWindow().dispose();
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                });
-                frame.getContentPane().add (new LogIn(true));
-                frame.pack();
-                frame.setLocationRelativeTo(null);
-                frame.setVisible (true);
+                StartGUI.frame.setVisible(false);
+                StartGUI.frame.setTitle("Log In");
+                StartGUI.frame.getContentPane().removeAll();
+                StartGUI.frame.getContentPane().add (new LogIn());
+                StartGUI.frame.pack();
+                StartGUI.frame.setLocationRelativeTo(null);
+                StartGUI.frame.setVisible (true);
             }
         });
         //add components
@@ -212,9 +190,5 @@ public class SignUp extends JPanel
         passWordField.setBounds (110, 185, 150, 25);
         haveAccount.setBounds (120, 350, 190, 25);
         loginBtn.setBounds (145, 380, 100, 25);
-    }
-    public static void Hide()
-    {
-        frame.setVisible(false);
     }
 }

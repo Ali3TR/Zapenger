@@ -61,10 +61,15 @@ public class AccountDB
 
     public static void setStatus(String username,String status)
     {
+        String temp;
+        if (status.contains("Online"))
+            temp="Online";
+        else
+            temp="Offline";
         try
         {
             preparedStatement = connection.prepareStatement("update account set status = ? where username = ?");
-            preparedStatement.setString(1, status);
+            preparedStatement.setString(1, temp);
             preparedStatement.setString(2, username);
             preparedStatement.executeUpdate();
         }

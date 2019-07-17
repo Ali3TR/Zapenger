@@ -3,14 +3,12 @@ package GUI;
 import SocketStuff.Client;
 import SocketStuff.Threads.InputStream;
 import SocketStuff.Threads.OutputStream;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
 public class LogIn extends JPanel
 {
-    private static JFrame frame;
     private JButton logIn;
     private JLabel userName;
     private JTextField userNameText;
@@ -24,9 +22,7 @@ public class LogIn extends JPanel
     private JLabel notFound;
     private JLabel fieldEmpty;
 
-
-
-    public LogIn(boolean calledBySignUp)
+    public LogIn()
     {
         //construct components
         logIn = new JButton ("Log In");
@@ -108,27 +104,14 @@ public class LogIn extends JPanel
                             break;
                         case 1:
                             setVisible(false);
-                            WelcomePage.Hide();
+                            StartGUI.frame.setVisible(false);
                             OutputStream.send("##SetStatus-Online");
-                            frame = new JFrame ("Zapenger");
-                            frame.addWindowListener(new WindowAdapter()
-                            {
-                                @Override
-                                public void windowClosing(WindowEvent e)
-                                {
-                                    OutputStream.send("##Close");
-                                    OutputStream.close();
-                                    InputStream.close();
-                                    Client.close();
-                                    System.out.println("all stuffs are closed");
-                                    e.getWindow().dispose();
-                                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                                }
-                            });
-                            frame.getContentPane().add (new MainPage(false));
-                            frame.pack();
-                            frame.setLocationRelativeTo(null);
-                            frame.setVisible (true);
+                            StartGUI.frame.setTitle("Zapenger");
+                            StartGUI.frame.getContentPane().removeAll();
+                            StartGUI.frame.getContentPane().add (new MainPage(false));
+                            StartGUI.frame.pack();
+                            StartGUI.frame.setLocationRelativeTo(null);
+                            StartGUI.frame.setVisible (true);
                     }
                 }
 
@@ -141,33 +124,14 @@ public class LogIn extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 setVisible(false);
-                if (calledBySignUp)
-                    SignUp.Hide();
-                else
-                    WelcomePage.Hide();
-                frame = new JFrame ("SignUp");
-                frame.addWindowListener(new WindowAdapter()
-                {
-                    @Override
-                    public void windowClosing(WindowEvent e)
-                    {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
-                        e.getWindow().dispose();
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                });
-                frame.getContentPane().add (new SignUp(true));
-                frame.pack();
-                frame.setLocationRelativeTo(null);
-                frame.setVisible (true);
+                StartGUI.frame.setVisible(false);
+                StartGUI.frame.setTitle("Sign Up");
+                StartGUI.frame.getContentPane().removeAll();
+                StartGUI.frame.getContentPane().add (new SignUp());
+                StartGUI.frame.pack();
+                StartGUI.frame.setLocationRelativeTo(null);
+                StartGUI.frame.setVisible (true);
             }
         });
-    }
-    public static void Hide()
-    {
-        frame.setVisible(false);
     }
 }

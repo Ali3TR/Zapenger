@@ -10,11 +10,10 @@ import java.awt.event.WindowEvent;
 
 public class StartGUI
 {
-    private static JFrame frame = new JFrame ("Zapenger");
+    public static JFrame frame = new JFrame ("Zapenger");
     public StartGUI()
     {
         //Frame stuff
-//        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter()
         {
             @Override
@@ -28,14 +27,10 @@ public class StartGUI
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
-        frame.getContentPane().add (new WelcomePage(false));
+        frame.getContentPane().add (new WelcomePage());
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible (true);
 
-    }
-    public static void Hide()
-    {
-        frame.setVisible(false);
     }
 }

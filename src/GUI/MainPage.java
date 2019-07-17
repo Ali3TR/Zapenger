@@ -2,7 +2,6 @@ package GUI;
 
 import SocketStuff.Client;
 import SocketStuff.Threads.*;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -13,17 +12,15 @@ import java.util.ArrayList;
 
 public class MainPage extends JPanel
 {
-    private static JFrame frame;
+    public static JFrame frame;
     private JButton setting;
     private JButton newChat;
     private ArrayList<JButton> buttons= new ArrayList<>();
-    private int numberOfChats;
 
     public MainPage(boolean calledByChatPage)
     {
         setting = new JButton ("Setting");
         newChat = new JButton ("Start a new chat");
-
 
         loadChats(calledByChatPage);
 
@@ -50,15 +47,11 @@ public class MainPage extends JPanel
                     @Override
                     public void windowClosing(WindowEvent e)
                     {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
+                        e.getWindow().setVisible(false);
                         e.getWindow().dispose();
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     }
                 });
-                frame.getContentPane().add (new Setting(calledByChatPage));
+                frame.getContentPane().add (new Setting());
                 frame.pack();
                 frame.setLocationRelativeTo(null);
                 frame.setVisible (true);
@@ -76,14 +69,11 @@ public class MainPage extends JPanel
                     @Override
                     public void windowClosing(WindowEvent e)
                     {
-                        OutputStream.send("##Close");
-                        OutputStream.close();
-                        InputStream.close();
-                        Client.close();
+                        e.getWindow().setVisible(false);
                         e.getWindow().dispose();
                     }
                 });
-                frame.getContentPane().add(new NewChat(calledByChatPage));
+                frame.getContentPane().add(new NewChat());
                 frame.pack();
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
@@ -117,7 +107,6 @@ public class MainPage extends JPanel
         if (!receiveMessage.equals(""))
             for (int k=0;k<temp.length;k++)
                 listOfChats.add(temp[k]);
-        numberOfChats=listOfChats.size();
         for (int k =0;k<listOfChats.size();k++)
             buttons.add(new JButton (listOfChats.get(k)));
         for (int k=0;k<buttons.size();k++)
@@ -133,37 +122,20 @@ public class MainPage extends JPanel
                 public void actionPerformed(ActionEvent e)
                 {
                     setVisible(false);
-
                     if (calledByChatPage)
                     {
-                        ChatPage.Hide();
                         InputGUI.con();
                         GetStatus.con();
                         OutputGUI.con();
                     }
-                    else
-                        LogIn.Hide();
-                    frame = new JFrame ("Zapenger");
-                    frame.addWindowListener(new WindowAdapter()
-                    {
-                        @Override
-                        public void windowClosing(WindowEvent e)
-                        {
-                            OutputStream.send("##Close");
-                            InputGUI.end();
-                            GetStatus.end();
-                            OutputGUI.end();
-                            OutputStream.close();
-                            InputStream.close();
-                            Client.close();
-                            e.getWindow().dispose();
-                            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                        }
-                    });
-                    frame.getContentPane().add (new ChatPage(name,true));
-                    frame.pack();
-                    frame.setLocationRelativeTo(null);
-                    frame.setVisible (true);
+                    StartGUI.frame.setResizable(true);
+                    StartGUI.frame.setVisible(false);
+                    StartGUI.frame.setTitle("Zapenger");
+                    StartGUI.frame.getContentPane().removeAll();
+                    StartGUI.frame.getContentPane().add (new ChatPage(name));
+                    StartGUI.frame.pack();
+                    StartGUI.frame.setLocationRelativeTo(null);
+                    StartGUI.frame.setVisible (true);
                 }
             });
         }

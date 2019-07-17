@@ -15,7 +15,7 @@ public class Client
     {
         try
         {
-            Client.socket = new Socket("127.0.0.1", 37425);
+            Client.socket = new Socket("127.0.0.1", 37424);
             System.out.println("Socket set");
         }
         catch (IOException error)
