@@ -76,6 +76,7 @@ public class NewChat extends JPanel
                     });
                     frame.getContentPane().add (new ChatPage(temp,false));
                     frame.pack();
+                    frame.setLocationRelativeTo(null);
                     frame.setVisible (true);
                 }
                 else

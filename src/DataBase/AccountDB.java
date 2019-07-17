@@ -122,6 +122,24 @@ public class AccountDB
         }
         return "NotFound";
     }
+    public static void setAllUserToOffline()
+    {
+        try
+        {
+            preparedStatement = connection.prepareStatement("select * from account");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next())
+            {
+                preparedStatement = connection.prepareStatement("update account set status = 'Offline' where username = ?");
+                preparedStatement.setString(1, resultSet.getString("username"));
+                preparedStatement.executeUpdate();
+            }
+        }
+        catch (SQLException err)
+        {
+            System.err.println(err);
+        }
+    }
 
 
 

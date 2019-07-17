@@ -174,6 +174,7 @@ public class SignUp extends JPanel
                 });
                 frame.getContentPane().add (new LogIn(true));
                 frame.pack();
+                frame.setLocationRelativeTo(null);
                 frame.setVisible (true);
             }
         });

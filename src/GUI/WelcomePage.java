@@ -67,6 +67,7 @@ public class WelcomePage extends JPanel
                 });
                 frame.getContentPane().add (new LogIn(false));
                 frame.pack();
+                frame.setLocationRelativeTo(null);
                 frame.setVisible (true);
             }
         });
@@ -97,10 +98,10 @@ public class WelcomePage extends JPanel
                 });
                 frame.getContentPane().add (new SignUp(false));
                 frame.pack();
+                frame.setLocationRelativeTo(null);
                 frame.setVisible (true);
             }
         });
-
     }
     public static void Hide()
     {

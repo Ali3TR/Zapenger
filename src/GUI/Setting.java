@@ -162,6 +162,7 @@ public class Setting extends JPanel
                 });
                 frame.getContentPane().add (new WelcomePage(true));
                 frame.pack();
+                frame.setLocationRelativeTo(null);
                 frame.setVisible (true);
             }
         });

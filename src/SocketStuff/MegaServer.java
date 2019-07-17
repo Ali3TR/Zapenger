@@ -11,9 +11,10 @@ public class MegaServer
 {
     private static AccountDB accountDB = new AccountDB();
     private static ArrayList<ClientHandler> clientList = new ArrayList<>();
-    private static boolean finished = false;
+    private static volatile boolean finished = false;
     public static void main(String[] args)
     {
+        AccountDB.setAllUserToOffline();
         Thread input = new ServerInput();
         input.start();
         ServerSocket serverSocket = null;
@@ -34,6 +35,9 @@ public class MegaServer
                 clientList.add(clientHandler);
                 clientHandler.start();
             }
+            for (int k = 0;k<clientList.size();k++)
+                clientList.get(k).close();
+            serverSocket.close();
         }
         catch (IOException error)
         {

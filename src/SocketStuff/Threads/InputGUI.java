@@ -10,8 +10,6 @@ public class InputGUI extends Thread
     private String receiver;
     private JTextArea chats;
     private JLabel status;
-    private OutputStream outputStream = new OutputStream(Client.getSocket());
-    private InputStream inputStream = new InputStream(Client.getSocket());
     public InputGUI(JTextArea chats,String receiver,JLabel status )
     {
         this.receiver=receiver;
@@ -24,10 +22,18 @@ public class InputGUI extends Thread
         String receivedMessage;
         while (flag0)
         {
-            receivedMessage = inputStream.read();
+            receivedMessage = InputStream.read();
             if (receivedMessage.startsWith("##Status-"+receiver))
             {
-                status.setText(receivedMessage.split("-")[2]);
+                String temp = receivedMessage.split("-")[2];
+                if (temp.startsWith("Typing"))
+                {
+                    if (temp.split("##")[1].equals(Client.getUserName()))
+                        status.setText("Typing");
+                    continue;
+                }
+                else
+                    status.setText(receivedMessage.split("-")[2].split("##")[0]);
                 continue;
             }
             chats.setEditable(true);

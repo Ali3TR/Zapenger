@@ -9,10 +9,9 @@ import DataBase.Chats;
 
 public class ClientHandler extends Thread
 {
-    private boolean flag=true;
+    private volatile boolean flag=true;
     private Socket socket;
     private String userName;
-    private ArrayList<ClientHandler> chatList = new ArrayList<>();
     private InputStream inputStream;
     private BufferedReader receiveRead;
     private OutputStream outputStream;
@@ -53,36 +52,20 @@ public class ClientHandler extends Thread
                 System.err.println(error + ":Error setting up input stream!");
             }
     }
-    private void send(String receiveMessage,int converNumber,int type)
+    private void send(String receiveMessage,ClientHandler clientHandler)
     {
-        if (type==1)
+        try
         {
-            ArrayList<ClientHandler> clientList = new ArrayList<>();
-            clientList.add(chatList.get(converNumber));
-            send(receiveMessage,clientList);
+            outputStream = clientHandler.getSocket().getOutputStream();
+            sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
+            sentRead.write(/*"&"+userName+":"+*/receiveMessage);
+            sentRead.newLine();
+            sentRead.flush();
+            System.out.println(receiveMessage);
         }
-        else
+        catch (IOException error)
         {
-
-        }
-    }
-    private void send(String receiveMessage,ArrayList<ClientHandler> clientList)
-    {
-        for (int k=0;k<clientList.size();k++)
-        {
-            try
-            {
-                outputStream = clientList.get(k).getSocket().getOutputStream();
-                sentRead = new BufferedWriter(new OutputStreamWriter(outputStream));
-                sentRead.write(/*"&"+userName+":"+*/receiveMessage);
-                sentRead.newLine();
-                sentRead.flush();
-                System.out.println(receiveMessage);
-            }
-            catch (IOException error)
-            {
-                System.err.println(error + ":Error setting up output stream for user "+userName+"!");
-            }
+            System.err.println(error + ":Error setting up output stream for user "+userName+"!");
         }
     }
     public Socket getSocket()
@@ -93,28 +76,6 @@ public class ClientHandler extends Thread
     {
         return userName;
     }
-    /*private int correctClient(ArrayList<ClientHandler> clientList)
-    {
-        for (int k=0;k<clientList.size();k++)
-        {
-            if (clientList.get(k).userName.equalsIgnoreCase(this.userName))
-                return k;
-        }
-        return -1;
-    }*/
-    private int hasChat(String userName)
-    {
-        for (int k=0;k<chatList.size();k++)
-        {
-            if (chatList.get(k).getUserName().equalsIgnoreCase(userName))
-                return k;
-        }
-        return -1;
-    }
-    private ArrayList<ClientHandler> getChatList()
-    {
-        return chatList;
-    }
     private void command(String command)
     {
         String[] temp = command.split("-");
@@ -123,19 +84,17 @@ public class ClientHandler extends Thread
             case "##Info":
                 this.userName=temp[1];
                 int isAuthorized = AccountDB.isAuthorized(temp[1],temp[2]);
-                ArrayList<ClientHandler> clientList0 = new ArrayList<>();
-                clientList0.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 switch (isAuthorized)
                 {
                     case 1:
-                        send("##LogedIn",clientList0);
+                        send("##LogedIn",this);
                         userName=temp[1];
                         break;
                     case -1:
-                        send("##NotLogedIn",clientList0);
+                        send("##NotLogedIn",this);
                         break;
                     case 0:
-                        send("##NotFound",clientList0);
+                        send("##NotFound",this);
                         break;
                 }
                 break;
@@ -150,31 +109,21 @@ public class ClientHandler extends Thread
                 AccountDB.setStatus(userName,temp[1]);
                 break;
             case "##GetStatus":
-                ArrayList<ClientHandler> clientList2 = new ArrayList<>();
-                clientList2.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
-                send("##Status-"+temp[1]+"-"+AccountDB.getStatus(temp[1].split("##")[0]),clientList2);
+                send("##Status-"+temp[1]+"-"+AccountDB.getStatus(temp[1].split("##")[0]),this);
                 break;
             case "##AddToChat":
                 Chats.addToChat(temp[3],temp[2],temp[1]);
-                ArrayList<ClientHandler> temp0 = new ArrayList<>();
                 int temp1=MegaServer.getClientNumber(temp[1]);
                 if(temp1!=-1)
-                {
-                    temp0.add(MegaServer.getClientList().get(temp1));
-                }
-                send(temp[3],temp0);
+                    send(temp[3],MegaServer.getClientList().get(temp1));
                 break;
             case "##LoadChats":
-                ArrayList<ClientHandler> clientList1 = new ArrayList<>();
-                clientList1.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 ArrayList<String> chats = Chats.loadChat(temp[1],temp[2]);
-                send(String.valueOf(chats.size()),clientList1);
+                send(String.valueOf(chats.size()),this);
                 for (int k=0;k<chats.size();k++)
-                    send(chats.get(k),clientList1);
+                    send(chats.get(k),this);
                 break;
             case "##ChatWith":
-                ArrayList<ClientHandler> clientList3 = new ArrayList<>();
-                clientList3.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 ArrayList<String> listOfChats = Chats.hasChatWith(temp[1]);
                 StringBuilder list = new StringBuilder();
                 for(int k=0;k<listOfChats.size();k++)
@@ -182,19 +131,16 @@ public class ClientHandler extends Thread
                     list.ensureCapacity(20*k+2);
                     list.append(listOfChats.get(k)+"##");
                 }
-                send("##ChatWith-"+list.toString(),clientList3);
-                break;
-            case "##Username":
-                this.userName=temp[1];
+                send("##ChatWith-"+list.toString(),this);
                 break;
             case "##StartChat":
-                ArrayList<ClientHandler> clientList4 = new ArrayList<>();
-                clientList4.add(MegaServer.getClientList().get(MegaServer.getClientNumber(userName)));
                 String temp5 = AccountDB.isUser(temp[1]);
                 if (temp5.equals("Found"))
+                {
                     Chats.startChat(userName,temp[1]);
-                send(temp5,clientList4);
 
+                }
+                send(temp5,this);
                 break;
             case "##Close":
                 close();

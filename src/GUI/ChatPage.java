@@ -125,6 +125,7 @@ public class ChatPage extends JPanel
                 });
                 frame.getContentPane().add (new MainPage(true));
                 frame.pack();
+                frame.setLocationRelativeTo(null);
                 frame.setVisible (true);
                 OutputGUI.sendOnline();
             }
@@ -135,15 +136,20 @@ public class ChatPage extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
+                String temp =urChats.getText();
                 jScrollPane.getVerticalScrollBar().setValue(jScrollPane.getVerticalScrollBar().getMaximum());
                 OutputGUI.sendOnline();
-                OutputStream.send("##AddToChat-"+userName+"-"+ Client.getUserName()+"-"
-                        +Client.getUserName()+"##"+urChats.getText());
-                chats.setEditable(true);
-                chats.append("You : "+urChats.getText());
-                chats.append("\n");
-                chats.setEditable(false);
-                urChats.setText("");
+                if (!(temp.length()==0))
+                {
+                    OutputStream.send("##AddToChat-"+userName+"-"+ Client.getUserName()+"-"
+                            +Client.getUserName()+"##"+temp);
+                    chats.setEditable(true);
+                    chats.append("You : "+temp);
+                    chats.append("\n");
+                    chats.setEditable(false);
+                    urChats.setText("");
+                }
+
             }
         });
 

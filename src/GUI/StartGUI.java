@@ -30,6 +30,7 @@ public class StartGUI
         });
         frame.getContentPane().add (new WelcomePage(false));
         frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setVisible (true);
 
     }

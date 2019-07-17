@@ -127,6 +127,7 @@ public class LogIn extends JPanel
                             });
                             frame.getContentPane().add (new MainPage(false));
                             frame.pack();
+                            frame.setLocationRelativeTo(null);
                             frame.setVisible (true);
                     }
                 }
@@ -160,6 +161,7 @@ public class LogIn extends JPanel
                 });
                 frame.getContentPane().add (new SignUp(true));
                 frame.pack();
+                frame.setLocationRelativeTo(null);
                 frame.setVisible (true);
             }
         });
